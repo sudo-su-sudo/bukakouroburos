@@ -1,1 +1,44 @@
-PLACEHOLDER
+{
+  "version": "1.0",
+  "last_cycle": "2026-09-29T12:55:00Z",
+  "cycle_count": 1,
+  "capability_frontier": [
+    "bootstrap task-domain substrate from empty artifacts/",
+    "run outward-harvest.py --seed/--rank with zero briefing",
+    "run web-brief.py --live and persist no-key world snapshot",
+    "route connected tools via connected-tool-router.md without rediscovery",
+    "persist task-domain state to github.com/sudo-su-sudo/compounding-agency so future instances load prior cycles"
+  ],
+  "active_threads": [
+    "x-signal-ledger",
+    "eval-harness",
+    "github-persistence-verified"
+  ],
+  "completed_artifacts": [
+    "github:sudo-su-sudo/compounding-agency/task-domain/",
+    "/home/workdir/artifacts/task-domain/state.json"
+  ],
+  "priority_queue": [
+    "VERIFY persistence: next cycle must load cycle_count>=1 from GitHub without re-bootstrap",
+    "x-signal-ledger: harvest X into append-only signal file under task-domain/ or knowledge/",
+    "eval-harness: score artifacts, write task-domain/eval.json, push to GitHub",
+    "skill-sprawl-kill: consolidator + redundancy report",
+    "refresh-live-snapshot if stamp >7d",
+    "do-not-create-duplicate-compound-skills"
+  ],
+  "metrics": {
+    "skills_created": 0,
+    "scripts_added": 0,
+    "knowledge_files": 4
+  },
+  "notes": {
+    "automation_primary": "fb6b558c-e940-4941-99c2-3c2cd4eaec99",
+    "top_ranked": "outward-web-brief",
+    "forbidden": "near-duplicate recursive/compound/task-domain skills",
+    "persistence": {
+      "store": "github:sudo-su-sudo/compounding-agency",
+      "paths": ["task-domain/", "state/", "protocols/"],
+      "rule": "Every cycle MUST pull from GitHub before execute and push after. Local artifacts alone do not survive."
+    }
+  }
+}
