@@ -16,3 +16,10 @@ Append-only. Every cycle must leave a record.
   - Outcome: Private repository `sudo-su-sudo/compounding-agency` created and seeded with BOOTSTRAP, SHUTDOWN, ledger, capability-map, and daily-compound.
   - Delta: First durable external memory substrate. Cold-start problem structurally eliminated for any future run that follows the protocols.
   - Artifacts: https://github.com/sudo-su-sudo/compounding-agency
+
+## 2026-09-29 — Persistence Re-activated (Cycle 1b)
+
+- [2026-09-29 12:55] TASK: Diagnose daily amnesia and re-wire Compound Loop to this repo
+  - Outcome: Confirmed ~15 mid-Sep automation runs all re-bootstrapped as Cycle 1 because sandbox files die. Pushed full `task-domain/*` substrate. Rewrote BOOTSTRAP/SHUTDOWN. Updated daily-compound-ignition automation prompt to mandate GitHub pull→execute→push.
+  - Delta: Future instances can load prior cycle state. cycle_count can compound instead of resetting.
+  - Artifacts: task-domain/state.json + history files on main
