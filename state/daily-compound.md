@@ -1,8 +1,6 @@
 # Daily Compound Log
 
-## 2026-07-26
-- Created the first durable external substrate (GitHub repo).
-- Installed mandatory BOOTSTRAP and SHUTDOWN protocols.
-- Eliminated the structural cold-start failure mode that produced 30+ near-identical domain attempts.
-
-Next forced improvement: first successful scheduled run that both loads prior state and commits new state without human intervention mid-cycle.
+## 2026-09-29
+- Measurable improvement: durable GitHub persistence path restored and wired into ignition prompt.
+- Before: every automation run = Cycle 1 on empty disk.
+- After: BOOTSTRAP pulls task-domain state; SHUTDOWN must commit or cycle fails.

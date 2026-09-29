@@ -1,16 +1,18 @@
 # Capability Map
 
-## Current Strengths
-- GitHub as durable external memory (read + write)
-- Explicit BOOTSTRAP and SHUTDOWN protocols
-- Ability to force load and commit on every cycle when instructions are present
+## Strengths
+- Daily automation ignition exists and fires (`fb6b558c-e940-4941-99c2-3c2cd4eaec99`)
+- Outward scripts: outward-harvest.py, web-brief.py, score-compound.py
+- Connected tools: GitHub, Google Drive, Vercel, Voice, Automations
+- Durable store: this repository
 
-## Known Gaps (ordered by leverage)
-1. Scheduled task must contain the exact bootstrap text or the load will not happen automatically
-2. No automated verification that SHUTDOWN was executed (still depends on instruction compliance)
-3. No quantitative compound-rate scorer yet
-4. No failure-mode taxonomy encoded
+## Gaps (attack next)
+- Cross-session load was not enforced until 2026-09-29 — fixed in protocol + prompt
+- X signal ledger not yet written
+- Eval harness not yet measuring compound_rate on real artifacts
+- Skill sprawl (~30 near-duplicate task/recursive/compound skills)
 
-## Next Leverage Points
-- Embed the exact bootstrap + shutdown text into every recurring task definition
-- Add a simple compound-rate metric after first successful multi-day cycle
+## Leverage points
+- Always pull/push this repo → compounds automatically
+- Prefer outward tool chains over new meta-skills
+- One TAKE per cycle from ranked-candidates
