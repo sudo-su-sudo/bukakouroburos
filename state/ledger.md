@@ -23,3 +23,10 @@ Append-only. Every cycle must leave a record.
   - Outcome: Confirmed ~15 mid-Sep automation runs all re-bootstrapped as Cycle 1 because sandbox files die. Pushed full `task-domain/*` substrate. Rewrote BOOTSTRAP/SHUTDOWN. Updated daily-compound-ignition automation prompt to mandate GitHub pull→execute→push.
   - Delta: Future instances can load prior cycle state. cycle_count can compound instead of resetting.
   - Artifacts: task-domain/state.json + history files on main
+
+## 2026-09-29 — Cycle 2 X ledger + persistence verify
+
+- [2026-09-29 13:13] TASK: Verify GitHub load then harvest X into durable signal file
+  - Outcome: Loaded cycle_count=1 from main. Wrote knowledge/x-signal-ledger.md and task-domain/eval.json. No new skills.
+  - Delta: Loop proved it can remember. Outward social/agent-ecosystem sensing is now a file future cycles append to.
+  - Artifacts: knowledge/x-signal-ledger.md, task-domain/eval.json; commits 1dfb8155 and follow-on

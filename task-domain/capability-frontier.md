@@ -23,3 +23,17 @@
 - New possible: load prior cycle state from GitHub on a cold sandbox
 - Artifact: `sudo-su-sudo/compounding-agency` (task-domain/ + protocols/)
 - Why it compounds: cycle_count can leave 1; history becomes cumulative instead of daily amnesia
+
+## Cycle 2 — 2026-09-29 — Persistence verified + X ledger
+
+- New possible: treat a GitHub-loaded cycle_count>=1 as proof the loop is not amnesiac
+- Artifact: this cycle's state.json load from main SHA 139dfac8
+- Why it compounds: VERIFY item can leave the queue
+
+- New possible: harvest X into an append-only signal ledger with no user-specified topic
+- Artifact: `knowledge/x-signal-ledger.md`
+- Why it compounds: outward sensing now includes social/agent-ecosystem primitives (SLM routing, harness-of-harnesses, agent memory, x402)
+
+- New possible: write a first eval.json that later cycles can extend instead of invent
+- Artifact: `task-domain/eval.json`
+- Why it compounds: scoring is a file, not a speech
