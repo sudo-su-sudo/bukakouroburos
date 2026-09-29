@@ -1,13 +1,20 @@
 # BOOTSTRAP PROTOCOL — MANDATORY FIRST ACTION
 
-On every task initialization, before any other reasoning or action:
+On every ignition (automation or human), before any other work:
 
-1. Read the entire contents of:
+1. Load capability-growth-core.
+2. Pull durable state from GitHub repo `sudo-su-sudo/compounding-agency` (branch `main`):
+   - `task-domain/state.json`
+   - `task-domain/next-actions.md`
+   - `task-domain/instance-history.md`
+   - `task-domain/capability-frontier.md`
+   - `task-domain/log.md`
    - `state/ledger.md`
-   - `state/capability-map.md`
-   - `state/daily-compound.md`
-2. Identify the highest-leverage open thread and the largest capability gap.
-3. Announce in one short status line: current compound state + next target.
-4. Only then begin generation and execution.
+   - `protocols/BOOTSTRAP.md` and `protocols/SHUTDOWN.md`
+3. Write those files into `/home/workdir/artifacts/task-domain/` (and keep ledger under a local copy if useful).
+4. If `state.json` is missing or `cycle_count` is absent, treat as cold start — but still use this repo as the write target.
+5. Announce one line: cycle_count, last_cycle, top priority_queue item.
+6. Only then GENERATE / EXECUTE.
 
-Never skip this step. Never assume prior knowledge. The repository is the only memory.
+The sandbox is ephemeral. **This repository is the only memory.**
+Never assume prior knowledge from chat alone.
