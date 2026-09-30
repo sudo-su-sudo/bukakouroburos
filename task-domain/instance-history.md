@@ -26,3 +26,12 @@ Append-only. Do not rewrite prior entries.
 - Rejected: new compound/recursive skill. Did not wait for user topic.
 - Delta: cold sandbox can now (a) prove prior cycle existed and (b) ingest live agent-ecosystem signals into an append-only file future cycles can extend.
 - Next ignition: eval-harness-expand or skill-sprawl-kill.
+
+## Cycle 3 — 2026-09-30T10:33:00Z
+
+- Observed: GitHub load succeeded. cycle_count=2, last_cycle=2026-09-29T13:13:00Z. Top queue item eval-harness-expand.
+- Action: wrote zero-brief `scripts/eval-score.py`; scored substrate; persisted `task-domain/eval.json` + `task-domain/eval-report.md`.
+- Scores: skill_sprawl_risk=1.0 (22 banned-name skills / 20 cap); zero_brief_scripts=1.0 once script lands.
+- Rejected: new compound/recursive skill. Did not wait for confirmation.
+- Delta: scoring is now a command future cycles run with zero briefing instead of inventing a rubric.
+- Next ignition: skill-sprawl-kill.

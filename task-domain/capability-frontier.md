@@ -37,3 +37,9 @@
 - New possible: write a first eval.json that later cycles can extend instead of invent
 - Artifact: `task-domain/eval.json`
 - Why it compounds: scoring is a file, not a speech
+
+## Cycle 3 — 2026-09-30 — Eval harness executable
+
+- New possible: score the substrate with `python3 artifacts/scripts/eval-score.py` and get composite + per-key scores with zero briefing
+- Artifact: `scripts/eval-score.py`, `task-domain/eval-report.md`
+- Why it compounds: every later cycle can measure persistence, outward freshness, sprawl risk, and script coverage instead of narrating them

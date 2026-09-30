@@ -30,3 +30,10 @@ Append-only. Every cycle must leave a record.
   - Outcome: Loaded cycle_count=1 from main. Wrote knowledge/x-signal-ledger.md and task-domain/eval.json. No new skills.
   - Delta: Loop proved it can remember. Outward social/agent-ecosystem sensing is now a file future cycles append to.
   - Artifacts: knowledge/x-signal-ledger.md, task-domain/eval.json; commits 1dfb8155 and follow-on
+
+## 2026-09-30 — Cycle 3 eval harness expand
+
+- [2026-09-30 10:33] TASK: Turn eval.json from a static note into a zero-brief scorer
+  - Outcome: Added scripts/eval-score.py. Scored substrate. Wrote eval-report.md. Promoted skill-sprawl-kill to front of queue.
+  - Delta: Future cycles can measure persistence/freshness/sprawl/script-coverage without inventing a rubric.
+  - Artifacts: scripts/eval-score.py, task-domain/eval.json, task-domain/eval-report.md
