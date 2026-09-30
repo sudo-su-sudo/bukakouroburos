@@ -1,27 +1,25 @@
 # Next Actions
 
-Updated: 2026-09-29T13:13:00Z after cycle 2 (persistence verified + X signal ledger).
+Updated: 2026-09-30T10:33:00Z after cycle 3 (eval-harness-expand).
 
 **Durable store:** `github.com/sudo-su-sudo/compounding-agency`  
 Every cycle: BOOTSTRAP from GitHub → execute → SHUTDOWN push. Local files alone die.
 
 ## Priority queue
 
-1. **TAKE** `eval-harness-expand` — score artifacts against eval.json keys; add a zero-brief scorer script if missing
-2. **TAKE** `skill-sprawl-kill` — consolidator + redundancy report (NO new compound skills)
-3. refresh live snapshot if stamp >7d
-4. optional outward primitive from x-signal-ledger (hindsight / openrig / univer) — not a skill clone
+1. **TAKE** `skill-sprawl-kill` — consolidator + redundancy report (NO new compound skills)
+2. refresh live snapshot if stamp >7d
+3. optional outward primitive from x-signal-ledger (hindsight / openrig / univer) — not a skill clone
+4. extend eval-score.py with a memory-quality key (content, not existence)
 5. NEVER create another recursive/compound/task-domain skill
 
 ## Zero-brief commands
 
 ```
-# After BOOTSTRAP pull into /home/workdir/artifacts/task-domain/
+python3 /home/workdir/artifacts/scripts/eval-score.py
 python3 /home/workdir/.grok/skills/recursive-task-domain/scripts/outward-harvest.py --rank /home/workdir/artifacts/task-domain/candidates.json
 python3 /home/workdir/.grok/skills/recursive-task-domain/scripts/web-brief.py --live
 ```
-
-X harvest this cycle used built-in x_keyword_search + x_semantic_search; ledger lives at knowledge/x-signal-ledger.md.
 
 ## Ignition
 

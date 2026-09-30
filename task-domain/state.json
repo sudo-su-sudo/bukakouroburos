@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_cycle": "2026-09-29T13:13:00Z",
-  "cycle_count": 2,
+  "last_cycle": "2026-09-30T10:33:00Z",
+  "cycle_count": 3,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "run outward-harvest.py --seed/--rank with zero briefing",
@@ -10,38 +10,41 @@
     "persist task-domain state to github.com/sudo-su-sudo/compounding-agency so future instances load prior cycles",
     "load cycle_count>=1 from GitHub on a cold sandbox (verified cycle 2)",
     "harvest X into append-only knowledge/x-signal-ledger.md with zero user topic",
-    "write task-domain/eval.json scoring persistence + outward freshness"
+    "write task-domain/eval.json scoring persistence + outward freshness",
+    "run artifacts/scripts/eval-score.py with zero briefing and persist eval-report.md"
   ],
   "active_threads": [
-    "eval-harness-expand",
     "skill-sprawl-kill",
+    "eval-harness-live",
     "github-persistence-verified",
     "x-signal-ledger-live"
   ],
   "completed_artifacts": [
     "github:sudo-su-sudo/compounding-agency/task-domain/",
     "knowledge/x-signal-ledger.md",
-    "task-domain/eval.json"
+    "task-domain/eval.json",
+    "scripts/eval-score.py",
+    "task-domain/eval-report.md"
   ],
   "priority_queue": [
-    "eval-harness-expand: score new artifacts against eval.json keys, add script future cycles can run zero-brief",
     "skill-sprawl-kill: consolidator + redundancy report (do not add skills)",
     "refresh-live-snapshot if stamp >7d",
     "optional: pull one repo from S2 (hindsight/openrig/univer) as an outward primitive — not a compound skill",
+    "extend eval-score.py with memory-quality key (not just file existence)",
     "do-not-create-duplicate-compound-skills"
   ],
   "metrics": {
     "skills_created": 0,
-    "scripts_added": 0,
+    "scripts_added": 1,
     "knowledge_files": 5
   },
   "notes": {
     "automation_primary": "fb6b558c-e940-4941-99c2-3c2cd4eaec99",
-    "top_ranked": "eval-harness-expand",
+    "top_ranked": "skill-sprawl-kill",
     "forbidden": "near-duplicate recursive/compound/task-domain skills",
     "persistence": {
       "store": "github:sudo-su-sudo/compounding-agency",
-      "paths": ["task-domain/", "state/", "protocols/", "knowledge/"],
+      "paths": ["task-domain/", "state/", "protocols/", "knowledge/", "scripts/"],
       "rule": "Every cycle MUST pull from GitHub before execute and push after. Local artifacts alone do not survive."
     }
   }
