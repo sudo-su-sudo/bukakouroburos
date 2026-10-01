@@ -37,3 +37,10 @@ Append-only. Every cycle must leave a record.
   - Outcome: Added scripts/eval-score.py. Scored substrate. Wrote eval-report.md. Promoted skill-sprawl-kill to front of queue.
   - Delta: Future cycles can measure persistence/freshness/sprawl/script-coverage without inventing a rubric.
   - Artifacts: scripts/eval-score.py, task-domain/eval.json, task-domain/eval-report.md
+
+## 2026-10-01 — Cycle 4 skill sprawl kill
+
+- [2026-10-01 10:40] TASK: Turn the 18 near-duplicate loop skills into a measured alias map and a 6-skill load set
+  - Outcome: Added scripts/skill-consolidator.py. Scanned /root/.grok/server-skills (30 SKILL.md). 18 aliases of recursive-task-domain. sprawl_ratio=0.6. No skills created or deleted.
+  - Delta: Future cycles can refuse the alias pile by file. Load set is capability-growth-core, capability-index, daily-compound-ignition, knowledge-compounder, leverage-maximizer, recursive-task-domain.
+  - Artifacts: scripts/skill-consolidator.py, knowledge/skill-redundancy-report.md, task-domain/skill-canonical-map.json

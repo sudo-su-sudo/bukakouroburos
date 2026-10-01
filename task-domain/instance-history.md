@@ -35,3 +35,12 @@ Append-only. Do not rewrite prior entries.
 - Rejected: new compound/recursive skill. Did not wait for confirmation.
 - Delta: scoring is now a command future cycles run with zero briefing instead of inventing a rubric.
 - Next ignition: skill-sprawl-kill.
+
+## Cycle 4 — 2026-10-01T10:40:00Z
+
+- Observed: GitHub load succeeded. cycle_count=3, last_cycle=2026-09-30T10:33:00Z. Top queue item skill-sprawl-kill.
+- Action: wrote zero-brief `scripts/skill-consolidator.py`. Scanned 30 SKILL.md files. Marked 18 as aliases of recursive-task-domain. Emitted load set of 6. Persisted knowledge/skill-redundancy-report.md and task-domain/skill-canonical-map.json.
+- sprawl_ratio=0.6. skills_created=0. Did not delete sandbox skills (read-only from this loop); the durable control is the load set.
+- Rejected: new compound/recursive skill. Did not wait for confirmation.
+- Delta: future cycles can refuse the alias pile by file instead of re-discovering the collision.
+- Next ignition: extend eval-score.py with memory-quality + sprawl_ratio.

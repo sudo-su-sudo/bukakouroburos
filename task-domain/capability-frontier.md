@@ -43,3 +43,9 @@
 - New possible: score the substrate with `python3 artifacts/scripts/eval-score.py` and get composite + per-key scores with zero briefing
 - Artifact: `scripts/eval-score.py`, `task-domain/eval-report.md`
 - Why it compounds: every later cycle can measure persistence, outward freshness, sprawl risk, and script coverage instead of narrating them
+
+## Cycle 4 — 2026-10-01 — Skill sprawl is a file
+
+- New possible: run `python3 artifacts/scripts/skill-consolidator.py` and get a 6-skill load set plus an 18-alias do-not-load map with zero briefing
+- Artifact: `scripts/skill-consolidator.py`, `knowledge/skill-redundancy-report.md`, `task-domain/skill-canonical-map.json`
+- Why it compounds: alias pile (sprawl_ratio 0.6) is measured; future cycles load the set instead of re-discovering 18 near-duplicate loop skills

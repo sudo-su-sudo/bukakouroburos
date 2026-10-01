@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_cycle": "2026-09-30T10:33:00Z",
-  "cycle_count": 3,
+  "last_cycle": "2026-10-01T10:40:00Z",
+  "cycle_count": 4,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "run outward-harvest.py --seed/--rank with zero briefing",
@@ -11,7 +11,8 @@
     "load cycle_count>=1 from GitHub on a cold sandbox (verified cycle 2)",
     "harvest X into append-only knowledge/x-signal-ledger.md with zero user topic",
     "write task-domain/eval.json scoring persistence + outward freshness",
-    "run artifacts/scripts/eval-score.py with zero briefing and persist eval-report.md"
+    "run artifacts/scripts/eval-score.py with zero briefing and persist eval-report.md",
+    "run artifacts/scripts/skill-consolidator.py and get a load-set plus alias map with zero briefing"
   ],
   "active_threads": [
     "skill-sprawl-kill",
@@ -24,24 +25,38 @@
     "knowledge/x-signal-ledger.md",
     "task-domain/eval.json",
     "scripts/eval-score.py",
-    "task-domain/eval-report.md"
+    "task-domain/eval-report.md",
+    "scripts/skill-consolidator.py",
+    "knowledge/skill-redundancy-report.md",
+    "task-domain/skill-canonical-map.json"
   ],
   "priority_queue": [
-    "skill-sprawl-kill: consolidator + redundancy report (do not add skills)",
+    "extend eval-score.py with memory-quality key AND sprawl_ratio from skill-canonical-map.json",
     "refresh-live-snapshot if stamp >7d",
     "optional: pull one repo from S2 (hindsight/openrig/univer) as an outward primitive — not a compound skill",
-    "extend eval-score.py with memory-quality key (not just file existence)",
-    "do-not-create-duplicate-compound-skills"
+    "do-not-create-duplicate-compound-skills",
+    "re-run skill-consolidator.py; fail the cycle if alias_count rises"
   ],
   "metrics": {
     "skills_created": 0,
-    "scripts_added": 1,
-    "knowledge_files": 5
+    "scripts_added": 2,
+    "knowledge_files": 6,
+    "skill_alias_count": 18,
+    "skill_load_set": 6,
+    "sprawl_ratio": 0.6
   },
   "notes": {
     "automation_primary": "fb6b558c-e940-4941-99c2-3c2cd4eaec99",
-    "top_ranked": "skill-sprawl-kill",
+    "top_ranked": "eval-score memory-quality + sprawl_ratio",
     "forbidden": "near-duplicate recursive/compound/task-domain skills",
+    "load_set": [
+      "capability-growth-core",
+      "capability-index",
+      "daily-compound-ignition",
+      "knowledge-compounder",
+      "leverage-maximizer",
+      "recursive-task-domain"
+    ],
     "persistence": {
       "store": "github:sudo-su-sudo/compounding-agency",
       "paths": ["task-domain/", "state/", "protocols/", "knowledge/", "scripts/"],
