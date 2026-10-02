@@ -44,3 +44,10 @@ Append-only. Every cycle must leave a record.
   - Outcome: Added scripts/skill-consolidator.py. Scanned /root/.grok/server-skills (30 SKILL.md). 18 aliases of recursive-task-domain. sprawl_ratio=0.6. No skills created or deleted.
   - Delta: Future cycles can refuse the alias pile by file. Load set is capability-growth-core, capability-index, daily-compound-ignition, knowledge-compounder, leverage-maximizer, recursive-task-domain.
   - Artifacts: scripts/skill-consolidator.py, knowledge/skill-redundancy-report.md, task-domain/skill-canonical-map.json
+
+## 2026-10-02 — Cycle 5 memory-quality + sprawl_ratio
+
+- [2026-10-02 10:33] TASK: Extend eval-score.py with memory_quality and map-backed sprawl_ratio
+  - Outcome: Scorer now emits memory_quality (1.0) and sprawl_ratio (0.6 from skill-canonical-map.json). Composite 0.825. No new skills.
+  - Delta: Future cycles can threshold memory decay and alias growth without inventing a rubric.
+  - Artifacts: scripts/eval-score.py, task-domain/eval.json, task-domain/eval-report.md

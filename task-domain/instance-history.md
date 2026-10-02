@@ -44,3 +44,11 @@ Append-only. Do not rewrite prior entries.
 - Rejected: new compound/recursive skill. Did not wait for confirmation.
 - Delta: future cycles can refuse the alias pile by file instead of re-discovering the collision.
 - Next ignition: extend eval-score.py with memory-quality + sprawl_ratio.
+
+## Cycle 5 — 2026-10-02T10:35:14Z
+
+- Observed: GitHub load succeeded. cycle_count=4, last_cycle=2026-10-01T10:40:00Z. Top queue item: extend eval-score.py with memory-quality and sprawl_ratio.
+- Action: extended scripts/eval-score.py. memory_quality scores state, history depth, ledger, prior eval. sprawl_ratio is read from task-domain/skill-canonical-map.json (0.6, alias_count=18), not recounted from skill names. Ran it. composite=0.825. memory_quality=1.0.
+- Rejected: new compound/recursive skill. Did not wait for confirmation.
+- Delta: future cycles can fail a run on memory decay or alias growth by reading numbers, not by re-deriving the rubric.
+- Next ignition: refresh-live-snapshot — knowledge/live-snapshot.json is absent on main.

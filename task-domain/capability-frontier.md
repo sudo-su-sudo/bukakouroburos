@@ -49,3 +49,9 @@
 - New possible: run `python3 artifacts/scripts/skill-consolidator.py` and get a 6-skill load set plus an 18-alias do-not-load map with zero briefing
 - Artifact: `scripts/skill-consolidator.py`, `knowledge/skill-redundancy-report.md`, `task-domain/skill-canonical-map.json`
 - Why it compounds: alias pile (sprawl_ratio 0.6) is measured; future cycles load the set instead of re-discovering 18 near-duplicate loop skills
+
+## Cycle 5 — 2026-10-02 — Memory quality is a number
+
+- New possible: run `python3 artifacts/scripts/eval-score.py` and get memory_quality plus sprawl_ratio sourced from skill-canonical-map.json with zero briefing
+- Artifact: `scripts/eval-score.py`, `task-domain/eval.json`, `task-domain/eval-report.md`
+- Why it compounds: alias growth and memory decay are now score keys a later cycle can threshold, not a narrative to rediscover
