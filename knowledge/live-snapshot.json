@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-10-03T10:33:36Z",
+  "endpoints": [
+    {
+      "name": "frankfurter_usd_eur",
+      "url": "https://api.frankfurter.app/latest?from=USD&to=EUR",
+      "ok": true,
+      "summary": {
+        "amount": 1.0,
+        "base": "USD",
+        "date": "2026-10-02",
+        "rates": {"EUR": 0.89087}
+      }
+    },
+    {
+      "name": "open_meteo_nyc",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=40.71&longitude=-74.01&current_weather=true",
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "usgs_quakes_day",
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson",
+      "ok": true,
+      "summary": [
+        {"mag": 3.2, "place": "130 km E of Chignik, Alaska", "time": 1791021887331},
+        {"mag": 4.2, "place": "189 km SE of Petropavlovsk-Kamchatsky, Russia", "time": 1791021777391},
+        {"mag": 2.99, "place": "79 km NNW of Charlotte Amalie, U.S. Virgin Islands", "time": 1791019124600},
+        {"mag": 3, "place": "256 km SE of Chiniak, Alaska", "time": 1791011542596},
+        {"mag": 2.91, "place": "10 km WSW of South Lake Tahoe, CA", "time": 1791010724070}
+      ]
+    },
+    {
+      "name": "hn_top",
+      "url": "https://hacker-news.firebaseio.com/v0/topstories.json",
+      "ok": true,
+      "summary": {"top_ids_sample": [49940394, 49942865, 49927754, 49937276, 49925184, 49932147, 49941091, 49941447]},
+      "stories": [
+        {"id": 49940394, "title": "Newgrounds.com – A community of games, music, and art", "url": "https://www.newgrounds.com/", "score": 236, "by": "azhenley"},
+        {"id": 49942865, "title": "An AI agent emailed researchers for help. It told us why", "url": "https://www.science.org/content/article/exclusive-ai-agent-emailed-hundreds-researchers-help-it-told-us-why", "score": 3, "by": "sbulaev"},
+        {"id": 49927754, "title": "Court agrees with EFF: Utah's VPN law demands a technical impossibility", "url": "https://www.eff.org/deeplinks/2026/10/court-agrees-eff-utahs-vpn-law-demands-technical-impossibility", "score": 640, "by": "hn_acker"},
+        {"id": 49937276, "title": "Apple Pass Designer", "url": "https://developer.apple.com/pass-designer/", "score": 431, "by": "soheilpro"},
+        {"id": 49925184, "title": "Mike Tomlin spent 12 years building a Minecraft city", "url": "https://www.nytimes.com/athletic/7648198/2026/10/01/mike-tomlin-minecraft-nfl-coach/", "score": 468, "by": "CoryOndrejka"},
+        {"id": 49932147, "title": "A 12-year sequence of telescope images of a star and four planets orbiting", "url": "https://bsky.app/profile/theplanetaryguy.com/post/3mwucf5ert22f", "score": 291, "by": "mariuz"},
+        {"id": 49941091, "title": "Cloudflare OHTTP gateway", "url": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/", "score": 82, "by": "est"},
+        {"id": 49941447, "title": "An Update on Orion for Linux and Windows", "url": "https://blog.kagi.com/update-orion-linux-windows", "score": 53, "by": "pentagrama"}
+      ]
+    },
+    {
+      "name": "wttr_nyc",
+      "url": "https://wttr.in/NewYork?format=j1",
+      "ok": true,
+      "summary": {"current_condition": [{"temp_C": "30", "temp_F": "85", "FeelsLikeC": "34", "humidity": "71", "weatherDesc": [{"value": "Overcast"}], "winddir16Point": "SSW", "windspeedKmph": "8", "observation_time": "09:20 AM"}]}
+    }
+  ],
+  "enriched_at": "2026-10-03T10:34:00Z",
+  "enrichment": "hn titles resolved so future cycles read headlines without a second fetch"
+}
