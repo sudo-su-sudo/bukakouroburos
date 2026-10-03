@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_cycle": "2026-10-02T10:35:14Z",
-  "cycle_count": 5,
+  "last_cycle": "2026-10-03T10:35:02Z",
+  "cycle_count": 6,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "run outward-harvest.py --seed/--rank with zero briefing",
@@ -13,13 +13,14 @@
     "write task-domain/eval.json scoring persistence + outward freshness",
     "run artifacts/scripts/eval-score.py with zero briefing and persist eval-report.md",
     "run artifacts/scripts/skill-consolidator.py and get a load-set plus alias map with zero briefing",
-    "run eval-score.py and get memory_quality plus sprawl_ratio from skill-canonical-map.json with zero briefing"
+    "run eval-score.py and get memory_quality plus sprawl_ratio from skill-canonical-map.json with zero briefing",
+    "run artifacts/scripts/refresh-live-snapshot.py and get a titled HN snapshot with zero briefing"
   ],
   "active_threads": [
+    "live-snapshot-on-main",
     "eval-memory-quality-live",
     "skill-sprawl-measured",
-    "github-persistence-verified",
-    "x-signal-ledger-live"
+    "github-persistence-verified"
   ],
   "completed_artifacts": [
     "github:sudo-su-sudo/compounding-agency/task-domain/",
@@ -29,27 +30,33 @@
     "task-domain/eval-report.md",
     "scripts/skill-consolidator.py",
     "knowledge/skill-redundancy-report.md",
-    "task-domain/skill-canonical-map.json"
+    "task-domain/skill-canonical-map.json",
+    "knowledge/live-snapshot.json",
+    "knowledge/live-brief.md",
+    "scripts/refresh-live-snapshot.py"
   ],
   "priority_queue": [
-    "refresh-live-snapshot: knowledge/live-snapshot.json is absent on main \u2014 run web-brief.py --live and push the snapshot",
+    "wire-snapshot-freshness: eval-score.py should dock outward_freshness when knowledge/live-snapshot.json is missing or older than 36h",
     "optional: pull one repo from S2 (hindsight/openrig/univer) as an outward primitive \u2014 not a compound skill",
     "re-run skill-consolidator.py; fail the cycle if alias_count rises above 18",
     "do-not-create-duplicate-compound-skills"
   ],
   "metrics": {
     "skills_created": 0,
-    "scripts_added": 2,
-    "knowledge_files": 6,
+    "scripts_added": 3,
+    "knowledge_files": 8,
     "skill_alias_count": 18,
     "skill_load_set": 6,
     "sprawl_ratio": 0.6,
     "memory_quality": 1.0,
-    "eval_composite": 0.825
+    "eval_composite": 0.825,
+    "live_snapshot_ok": 4,
+    "live_snapshot_n": 5,
+    "hn_titles_resolved": 8
   },
   "notes": {
     "automation_primary": "fb6b558c-e940-4941-99c2-3c2cd4eaec99",
-    "top_ranked": "refresh-live-snapshot (file absent on main)",
+    "top_ranked": "wire-snapshot-freshness into eval-score.py",
     "forbidden": "near-duplicate recursive/compound/task-domain skills",
     "load_set": [
       "capability-growth-core",
@@ -70,11 +77,11 @@
       ],
       "rule": "Every cycle MUST pull from GitHub before execute and push after. Local artifacts alone do not survive."
     },
-    "last_eval": {
-      "ts": "2026-10-02T10:34:48Z",
-      "composite": 0.825,
-      "sprawl_ratio": 0.6,
-      "memory_quality": 1.0
+    "last_snapshot": {
+      "ts": "2026-10-03T10:33:36Z",
+      "ok": 4,
+      "n": 5,
+      "meteo": "429 Too Many Requests"
     }
   }
 }
