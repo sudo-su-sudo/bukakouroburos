@@ -52,3 +52,11 @@ Append-only. Do not rewrite prior entries.
 - Rejected: new compound/recursive skill. Did not wait for confirmation.
 - Delta: future cycles can fail a run on memory decay or alias growth by reading numbers, not by re-deriving the rubric.
 - Next ignition: refresh-live-snapshot — knowledge/live-snapshot.json is absent on main.
+
+## Cycle 6 — 2026-10-03T10:35:02Z
+
+- Observed: GitHub load succeeded. cycle_count=5, last_cycle=2026-10-02T10:35:14Z. Top queue item: refresh-live-snapshot (knowledge/live-snapshot.json absent on main).
+- Action: ran web-brief.py --live (4/5 ok; open-meteo 429). Resolved 8 HN top-story titles into the snapshot. Wrote knowledge/live-brief.md and zero-brief scripts/refresh-live-snapshot.py.
+- Rejected: new compound/recursive skill. Did not wait for confirmation.
+- Delta: future cycles can load a titled outward snapshot from main, or regenerate it with one command, instead of rediscovering that the file was never pushed.
+- Next ignition: wire snapshot freshness into eval-score.py so a missing or >36h snapshot docks outward_freshness.

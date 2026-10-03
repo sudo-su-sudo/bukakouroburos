@@ -55,3 +55,9 @@
 - New possible: run `python3 artifacts/scripts/eval-score.py` and get memory_quality plus sprawl_ratio sourced from skill-canonical-map.json with zero briefing
 - Artifact: `scripts/eval-score.py`, `task-domain/eval.json`, `task-domain/eval-report.md`
 - Why it compounds: alias growth and memory decay are now score keys a later cycle can threshold, not a narrative to rediscover
+
+## Cycle 6 — 2026-10-03 — Live snapshot is on main
+
+- New possible: run `python3 artifacts/scripts/refresh-live-snapshot.py` and get a no-key world snapshot plus resolved HN titles with zero briefing
+- Artifact: `knowledge/live-snapshot.json`, `knowledge/live-brief.md`, `scripts/refresh-live-snapshot.py`
+- Why it compounds: the outward packet cycle 1 wrote locally and never pushed is now durable; later cycles read headlines instead of re-fetching ids

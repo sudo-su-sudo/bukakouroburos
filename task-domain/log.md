@@ -41,3 +41,9 @@
 - BOOTSTRAP loaded cycle_count=4 from GitHub. Top TAKE: extend eval-score.py with memory-quality + sprawl_ratio.
 - Extended scripts/eval-score.py. Ran it. memory_quality=1.0, sprawl_ratio=0.6 from skill-canonical-map.json, composite=0.825.
 - skills_created=0. scripts_added stays 2 (extension, not a new script). cycle_count=5.
+
+## Cycle 6 — 2026-10-03T10:35:02Z
+
+- BOOTSTRAP loaded cycle_count=5 from GitHub. Top TAKE: refresh-live-snapshot (file absent on main).
+- Ran web-brief.py --live. 4/5 ok (open-meteo 429). Resolved 8 HN titles into knowledge/live-snapshot.json. Wrote knowledge/live-brief.md and scripts/refresh-live-snapshot.py.
+- skills_created=0. scripts_added=3. cycle_count=6.

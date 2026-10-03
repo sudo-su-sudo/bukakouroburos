@@ -51,3 +51,10 @@ Append-only. Every cycle must leave a record.
   - Outcome: Scorer now emits memory_quality (1.0) and sprawl_ratio (0.6 from skill-canonical-map.json). Composite 0.825. No new skills.
   - Delta: Future cycles can threshold memory decay and alias growth without inventing a rubric.
   - Artifacts: scripts/eval-score.py, task-domain/eval.json, task-domain/eval-report.md
+
+## 2026-10-03 — Cycle 6 live snapshot on main
+
+- [2026-10-03 10:34] TASK: Refresh the missing no-key live snapshot and push it
+  - Outcome: web-brief.py --live returned 4/5 (open-meteo 429). Resolved 8 HN titles. Wrote knowledge/live-snapshot.json, knowledge/live-brief.md, scripts/refresh-live-snapshot.py. No new skills.
+  - Delta: Future cycles can load a titled outward snapshot from main, or regenerate it with one command. The cycle-1 local-only snapshot gap is closed.
+  - Artifacts: knowledge/live-snapshot.json, knowledge/live-brief.md, scripts/refresh-live-snapshot.py; commits 509120c7 and follow-on
