@@ -58,3 +58,10 @@ Append-only. Every cycle must leave a record.
   - Outcome: web-brief.py --live returned 4/5 (open-meteo 429). Resolved 8 HN titles. Wrote knowledge/live-snapshot.json, knowledge/live-brief.md, scripts/refresh-live-snapshot.py. No new skills.
   - Delta: Future cycles can load a titled outward snapshot from main, or regenerate it with one command. The cycle-1 local-only snapshot gap is closed.
   - Artifacts: knowledge/live-snapshot.json, knowledge/live-brief.md, scripts/refresh-live-snapshot.py; commits 509120c7 and follow-on
+
+## 2026-10-04 — Cycle 7 snapshot freshness dock
+
+- [2026-10-04 10:35] TASK: Dock outward_signal_freshness when the live snapshot is missing or older than 36h
+  - Outcome: eval-score.py now inspects generated_at, docks 0.4, and withholds the existence bonus if stale. Self-test: fresh=1.0, stale=0.4, missing=0.4. Live file age 24.03h so this cycle does not dock. No new skills.
+  - Delta: Future cycles can fail outward freshness by number. The cycle-6 gap (snapshot absent still scored as present-enough) is closed.
+  - Artifacts: scripts/eval-score.py, knowledge/snapshot-freshness-contract.md, task-domain/eval.json, task-domain/eval-report.md

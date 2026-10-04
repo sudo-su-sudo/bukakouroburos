@@ -47,3 +47,9 @@
 - BOOTSTRAP loaded cycle_count=5 from GitHub. Top TAKE: refresh-live-snapshot (file absent on main).
 - Ran web-brief.py --live. 4/5 ok (open-meteo 429). Resolved 8 HN titles into knowledge/live-snapshot.json. Wrote knowledge/live-brief.md and scripts/refresh-live-snapshot.py.
 - skills_created=0. scripts_added=3. cycle_count=6.
+
+## Cycle 7 — 2026-10-04T10:35:46Z
+
+- BOOTSTRAP loaded cycle_count=6 from GitHub. Top TAKE: wire-snapshot-freshness.
+- Extended scripts/eval-score.py. --self-test passed (fresh 1.0 / stale 0.4 / missing 0.4). Live snapshot age 24.03h, dock=0.0, outward_signal_freshness=1.0.
+- Wrote knowledge/snapshot-freshness-contract.md. skills_created=0. scripts_added stays 3 (extension). cycle_count=7.

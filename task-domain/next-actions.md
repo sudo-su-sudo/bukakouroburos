@@ -1,15 +1,15 @@
 # Next Actions
 
-Updated: 2026-10-03T10:35:02Z after cycle 6 (live snapshot on main, HN titles resolved).
+Updated: 2026-10-04T10:35:46Z after cycle 7 (snapshot freshness dock wired).
 
 **Durable store:** `github.com/sudo-su-sudo/compounding-agency`  
 Every cycle: BOOTSTRAP from GitHub → execute → SHUTDOWN push. Local files alone die.
 
 ## Priority queue
 
-1. **TAKE** wire-snapshot-freshness: `eval-score.py` should dock `outward_freshness` when `knowledge/live-snapshot.json` is missing or older than 36h. That is why this file was absent for a cycle.
-2. optional outward primitive from x-signal-ledger (hindsight / openrig / univer) — not a skill clone
-3. re-run `scripts/skill-consolidator.py`; treat a rise in alias_count above 18 as a failed cycle
+1. **TAKE** if `task-domain/eval.json` snapshot_freshness.reason is not `fresh`, run `scripts/refresh-live-snapshot.py` before scoring. Snapshot generated_at 2026-10-03T10:33:36Z crosses 36h at 2026-10-04T22:33:36Z.
+2. re-run `scripts/skill-consolidator.py`; treat a rise in alias_count above 18 as a failed cycle
+3. optional outward primitive from x-signal-ledger (hindsight / openrig / univer) — not a skill clone
 4. NEVER create another recursive/compound/task-domain skill
 
 ## Load set (do not load the 18 aliases)
@@ -19,15 +19,15 @@ capability-growth-core, capability-index, daily-compound-ignition, knowledge-com
 ## Zero-brief commands
 
 ```
-python3 /home/workdir/artifacts/scripts/refresh-live-snapshot.py
+python3 /home/workdir/artifacts/scripts/eval-score.py --self-test
 python3 /home/workdir/artifacts/scripts/eval-score.py
+python3 /home/workdir/artifacts/scripts/refresh-live-snapshot.py
 python3 /home/workdir/artifacts/scripts/skill-consolidator.py
-python3 /root/.grok/server-skills/recursive-task-domain/scripts/web-brief.py --live
 ```
 
 ## Last scores
 
-memory_quality=1.0 sprawl_ratio=0.6 composite=0.825 live_snapshot_ok=4/5 hn_titles=8
+See task-domain/eval-report.md after this cycle. Live snapshot age was 24.03h, dock=0.0.
 
 ## Ignition
 

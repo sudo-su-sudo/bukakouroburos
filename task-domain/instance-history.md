@@ -60,3 +60,11 @@ Append-only. Do not rewrite prior entries.
 - Rejected: new compound/recursive skill. Did not wait for confirmation.
 - Delta: future cycles can load a titled outward snapshot from main, or regenerate it with one command, instead of rediscovering that the file was never pushed.
 - Next ignition: wire snapshot freshness into eval-score.py so a missing or >36h snapshot docks outward_freshness.
+
+## Cycle 7 — 2026-10-04T10:35:46Z
+
+- Observed: GitHub load succeeded. cycle_count=6, last_cycle=2026-10-03T10:35:02Z. Top queue item: wire-snapshot-freshness.
+- Action: extended scripts/eval-score.py so outward_signal_freshness docks 0.4 when knowledge/live-snapshot.json is missing or generated_at is older than 36h. Fresh snapshot still earns the 0.2 existence term; stale does not. Added --self-test (fresh=1.0, stale=0.4, missing=0.4). Live snapshot age 24.03h, reason=fresh, dock=0.0.
+- Rejected: new compound/recursive skill. Did not wait for confirmation.
+- Delta: a missing or stale outward packet can no longer score as fresh. Future cycles fail the freshness key by reading snapshot_freshness.reason instead of noticing the file was absent after the fact.
+- Next ignition: if snapshot reason != fresh, run refresh-live-snapshot.py before scoring; else re-run skill-consolidator.py and fail if alias_count rises above 18.

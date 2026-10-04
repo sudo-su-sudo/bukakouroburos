@@ -61,3 +61,9 @@
 - New possible: run `python3 artifacts/scripts/refresh-live-snapshot.py` and get a no-key world snapshot plus resolved HN titles with zero briefing
 - Artifact: `knowledge/live-snapshot.json`, `knowledge/live-brief.md`, `scripts/refresh-live-snapshot.py`
 - Why it compounds: the outward packet cycle 1 wrote locally and never pushed is now durable; later cycles read headlines instead of re-fetching ids
+
+## Cycle 7 — 2026-10-04 — Snapshot freshness is a dock
+
+- New possible: run `python3 artifacts/scripts/eval-score.py` and get outward_signal_freshness docked when knowledge/live-snapshot.json is missing or older than 36h, with --self-test proving fresh/stale/missing
+- Artifact: `scripts/eval-score.py`, `knowledge/snapshot-freshness-contract.md`, `task-domain/eval.json`
+- Why it compounds: existence is no longer mistaken for freshness; a later cycle can threshold snapshot_freshness.reason without rediscovering the 36h rule

@@ -1,18 +1,18 @@
 {
-  "cycle": 5,
-  "ts": "2026-10-02T10:34:48Z",
+  "cycle": 7,
+  "ts": "2026-10-04T10:36:16Z",
   "scorer": "artifacts/scripts/eval-score.py",
   "persistence_verified": true,
   "scores": {
     "github_roundtrip": 1.0,
-    "outward_signal_freshness": 0.8,
+    "outward_signal_freshness": 1.0,
     "skill_sprawl_risk": 1.0,
     "zero_brief_scripts": 0.75,
     "memory_quality": 1.0,
     "sprawl_ratio": 0.6,
     "eval_coverage": 1.0
   },
-  "composite": 0.825,
+  "composite": 0.858,
   "memory_quality_detail": {
     "parts": {
       "completed_artifacts": 1.0,
@@ -23,10 +23,10 @@
       "ledger_depth": 1.0,
       "prior_eval": 1.0
     },
-    "cycle_count_seen": 4,
-    "history_headings": 5,
-    "log_headings": 5,
-    "frontier_headings": 5
+    "cycle_count_seen": 7,
+    "history_headings": 8,
+    "log_headings": 8,
+    "frontier_headings": 8
   },
   "sprawl_ratio_detail": {
     "source": "task-domain/skill-canonical-map.json",
@@ -35,16 +35,30 @@
     "load_set": 6,
     "generated_at": "2026-10-01T10:33:36Z"
   },
-  "notes": "Zero-brief scorer. memory_quality and sprawl_ratio added cycle 5. sprawl_ratio is read from skill-canonical-map.json. Composite uses (1 - sprawl_ratio), not the legacy name heuristic.",
+  "snapshot_freshness": {
+    "path": "knowledge/live-snapshot.json",
+    "present": true,
+    "generated_at": "2026-10-03T10:33:36Z",
+    "age_hours": 24.04,
+    "max_age_hours": 36.0,
+    "stale": false,
+    "dock": 0.0,
+    "reason": "fresh",
+    "source": "generated_at",
+    "score": 1.0
+  },
+  "notes": "Zero-brief scorer. Cycle 7 docks outward_signal_freshness by 0.4 when knowledge/live-snapshot.json is missing or generated_at is older than 36h. sprawl_ratio is read from skill-canonical-map.json. Composite uses (1 - sprawl_ratio), not the legacy name heuristic.",
   "prior": {
-    "ts": "2026-09-30T10:35:24Z",
+    "ts": "2026-10-04T10:35:37Z",
     "scores": {
-      "github_roundtrip": 1.0,
-      "outward_signal_freshness": 0.8,
+      "github_roundtrip": 0.7,
+      "outward_signal_freshness": 1.0,
       "skill_sprawl_risk": 1.0,
-      "zero_brief_scripts": 1.0,
+      "zero_brief_scripts": 0.75,
+      "memory_quality": 0.571,
+      "sprawl_ratio": 0.6,
       "eval_coverage": 1.0
     },
-    "cycle": 3
+    "cycle": null
   }
 }
