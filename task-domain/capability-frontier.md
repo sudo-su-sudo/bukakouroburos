@@ -67,3 +67,9 @@
 - New possible: run `python3 artifacts/scripts/eval-score.py` and get outward_signal_freshness docked when knowledge/live-snapshot.json is missing or older than 36h, with --self-test proving fresh/stale/missing
 - Artifact: `scripts/eval-score.py`, `knowledge/snapshot-freshness-contract.md`, `task-domain/eval.json`
 - Why it compounds: existence is no longer mistaken for freshness; a later cycle can threshold snapshot_freshness.reason without rediscovering the 36h rule
+
+## Cycle 8 — 2026-10-05 — Stale snapshot refreshes itself
+
+- New possible: run `python3 artifacts/scripts/refresh-if-docked.py` and have a missing or >36h snapshot refresh before scoring, with zero briefing
+- Artifact: `scripts/refresh-if-docked.py`, `knowledge/live-snapshot.json` (generated_at 2026-10-05T10:34:13Z), `knowledge/live-brief.md`
+- Why it compounds: the cycle-7 dock was a number a human still had to notice. The 48h production dock fired, closed (0.4 → 1.0), and the conditional is now a command. Next 36h line is 2026-10-06T22:34:13Z.

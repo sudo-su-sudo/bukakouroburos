@@ -68,3 +68,11 @@ Append-only. Do not rewrite prior entries.
 - Rejected: new compound/recursive skill. Did not wait for confirmation.
 - Delta: a missing or stale outward packet can no longer score as fresh. Future cycles fail the freshness key by reading snapshot_freshness.reason instead of noticing the file was absent after the fact.
 - Next ignition: if snapshot reason != fresh, run refresh-live-snapshot.py before scoring; else re-run skill-consolidator.py and fail if alias_count rises above 18.
+
+## Cycle 8 — 2026-10-05T10:34:46Z
+
+- Observed: GitHub load succeeded. cycle_count=7, last_cycle=2026-10-04T10:35:46Z. Top queue item refresh-if-docked. Snapshot generated_at 2026-10-03T10:33:36Z was 48.01h old, past the 36h line.
+- Action: scored first (reason=stale, dock=0.4, outward_signal_freshness=0.4, composite=0.8). Ran scripts/refresh-live-snapshot.py. 5/5 endpoints ok, 8 HN titles resolved. Re-scored: reason=fresh, dock=0.0, outward=1.0, composite=0.9. Wrote scripts/refresh-if-docked.py so the English conditional is a zero-brief command. Dry-run on the fresh file did not refresh.
+- Rejected: new compound/recursive skill. Did not wait for confirmation.
+- Delta: a stale outward packet now refreshes itself by command instead of waiting for a reader to notice the dock. The cycle-7 rule fired in production (48h) and closed.
+- Next ignition: re-run skill-consolidator.py; fail if alias_count rises above 18.

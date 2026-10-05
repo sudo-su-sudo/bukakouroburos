@@ -65,3 +65,10 @@ Append-only. Every cycle must leave a record.
   - Outcome: eval-score.py now inspects generated_at, docks 0.4, and withholds the existence bonus if stale. Self-test: fresh=1.0, stale=0.4, missing=0.4. Live file age 24.03h so this cycle does not dock. No new skills.
   - Delta: Future cycles can fail outward freshness by number. The cycle-6 gap (snapshot absent still scored as present-enough) is closed.
   - Artifacts: scripts/eval-score.py, knowledge/snapshot-freshness-contract.md, task-domain/eval.json, task-domain/eval-report.md
+
+## 2026-10-05 — Cycle 8 refresh-if-docked fired
+
+- [2026-10-05 10:34] TASK: Refresh the outward snapshot because the 36h dock had fired
+  - Outcome: Pre-score age 48.01h, dock=0.4, outward=0.4, composite=0.8. refresh-live-snapshot.py returned 5/5 and 8 HN titles. Post-score reason=fresh, dock=0.0, outward=1.0, composite=0.9. Added scripts/refresh-if-docked.py. No new skills.
+  - Delta: Future cycles can close a stale outward packet with one command instead of re-reading the queue sentence. The cycle-7 rule is no longer untested.
+  - Artifacts: scripts/refresh-if-docked.py, knowledge/live-snapshot.json, knowledge/live-brief.md, task-domain/eval.json

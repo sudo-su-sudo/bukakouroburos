@@ -53,3 +53,12 @@
 - BOOTSTRAP loaded cycle_count=6 from GitHub. Top TAKE: wire-snapshot-freshness.
 - Extended scripts/eval-score.py. --self-test passed (fresh 1.0 / stale 0.4 / missing 0.4). Live snapshot age 24.03h, dock=0.0, outward_signal_freshness=1.0.
 - Wrote knowledge/snapshot-freshness-contract.md. skills_created=0. scripts_added stays 3 (extension). cycle_count=7.
+
+## Cycle 8 — 2026-10-05T10:34:46Z
+
+- BOOTSTRAP loaded cycle_count=7 from GitHub. Top TAKE: refresh-if-docked (36h line crossed).
+- Pre-score: snapshot age 48.01h, reason=stale, dock=0.4, outward_signal_freshness=0.4, composite=0.8.
+- Ran refresh-live-snapshot.py. 5/5 ok (open-meteo recovered from cycle-6 429). 8 HN titles. generated_at=2026-10-05T10:34:13Z.
+- Post-score: reason=fresh, dock=0.0, outward=1.0, composite=0.9.
+- Wrote scripts/refresh-if-docked.py. Dry-run on fresh snapshot refreshed=false.
+- skills_created=0. scripts_added=4. cycle_count=8.

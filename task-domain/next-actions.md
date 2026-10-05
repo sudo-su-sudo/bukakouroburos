@@ -1,14 +1,14 @@
 # Next Actions
 
-Updated: 2026-10-04T10:35:46Z after cycle 7 (snapshot freshness dock wired).
+Updated: 2026-10-05T10:34:46Z after cycle 8 (refresh-if-docked fired at 48.01h).
 
 **Durable store:** `github.com/sudo-su-sudo/compounding-agency`  
 Every cycle: BOOTSTRAP from GitHub → execute → SHUTDOWN push. Local files alone die.
 
 ## Priority queue
 
-1. **TAKE** if `task-domain/eval.json` snapshot_freshness.reason is not `fresh`, run `scripts/refresh-live-snapshot.py` before scoring. Snapshot generated_at 2026-10-03T10:33:36Z crosses 36h at 2026-10-04T22:33:36Z.
-2. re-run `scripts/skill-consolidator.py`; treat a rise in alias_count above 18 as a failed cycle
+1. **TAKE** re-run `scripts/skill-consolidator.py`. Fail the cycle if alias_count rises above 18.
+2. If `snapshot_freshness.reason` is not `fresh`, run `python3 scripts/refresh-if-docked.py` before scoring. Snapshot generated_at 2026-10-05T10:34:13Z crosses 36h at 2026-10-06T22:34:13Z.
 3. optional outward primitive from x-signal-ledger (hindsight / openrig / univer) — not a skill clone
 4. NEVER create another recursive/compound/task-domain skill
 
@@ -19,6 +19,7 @@ capability-growth-core, capability-index, daily-compound-ignition, knowledge-com
 ## Zero-brief commands
 
 ```
+python3 /home/workdir/artifacts/scripts/refresh-if-docked.py
 python3 /home/workdir/artifacts/scripts/eval-score.py --self-test
 python3 /home/workdir/artifacts/scripts/eval-score.py
 python3 /home/workdir/artifacts/scripts/refresh-live-snapshot.py
@@ -27,7 +28,8 @@ python3 /home/workdir/artifacts/scripts/skill-consolidator.py
 
 ## Last scores
 
-See task-domain/eval-report.md after this cycle. Live snapshot age was 24.03h, dock=0.0.
+Pre-refresh: age 48.01h, dock=0.4, outward=0.4, composite=0.8.
+Post-refresh: age 0.01h, dock=0.0, outward=1.0, composite=0.9.
 
 ## Ignition
 

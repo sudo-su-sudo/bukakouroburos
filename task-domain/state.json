@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_cycle": "2026-10-04T10:35:46Z",
-  "cycle_count": 7,
+  "last_cycle": "2026-10-05T10:34:46Z",
+  "cycle_count": 8,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "run outward-harvest.py --seed/--rank with zero briefing",
@@ -15,11 +15,12 @@
     "run artifacts/scripts/skill-consolidator.py and get a load-set plus alias map with zero briefing",
     "run eval-score.py and get memory_quality plus sprawl_ratio from skill-canonical-map.json with zero briefing",
     "run artifacts/scripts/refresh-live-snapshot.py and get a titled HN snapshot with zero briefing",
-    "run eval-score.py and dock outward_signal_freshness when live-snapshot.json is missing or older than 36h"
+    "run eval-score.py and dock outward_signal_freshness when live-snapshot.json is missing or older than 36h",
+    "run artifacts/scripts/refresh-if-docked.py and have a stale snapshot refresh itself before scoring, with zero briefing"
   ],
   "active_threads": [
-    "snapshot-freshness-docked",
-    "eval-memory-quality-live",
+    "snapshot-freshness-closed",
+    "refresh-if-docked-executable",
     "skill-sprawl-measured",
     "github-persistence-verified"
   ],
@@ -35,24 +36,25 @@
     "knowledge/live-snapshot.json",
     "knowledge/live-brief.md",
     "scripts/refresh-live-snapshot.py",
-    "knowledge/snapshot-freshness-contract.md"
+    "knowledge/snapshot-freshness-contract.md",
+    "scripts/refresh-if-docked.py"
   ],
   "priority_queue": [
-    "refresh-if-docked: if eval snapshot_freshness.reason != fresh, run refresh-live-snapshot.py before the next score (36h line at 2026-10-04T22:33:36Z)",
-    "re-run skill-consolidator.py; fail the cycle if alias_count rises above 18",
+    "re-run scripts/skill-consolidator.py; fail the cycle if alias_count rises above 18",
+    "refresh-if-docked: python3 scripts/refresh-if-docked.py if snapshot reason != fresh (36h line now 2026-10-06T22:34:13Z)",
     "optional: pull one repo from S2 (hindsight/openrig/univer) as an outward primitive \u2014 not a compound skill",
     "do-not-create-duplicate-compound-skills"
   ],
   "metrics": {
     "skills_created": 0,
-    "scripts_added": 3,
+    "scripts_added": 4,
     "knowledge_files": 9,
     "skill_alias_count": 18,
     "skill_load_set": 6,
     "sprawl_ratio": 0.6,
     "memory_quality": 1.0,
-    "eval_composite": 0.858,
-    "live_snapshot_age_hours": 24.03,
+    "eval_composite": 0.9,
+    "live_snapshot_age_hours": 0.01,
     "snapshot_freshness_reason": "fresh",
     "snapshot_dock": 0.0,
     "self_test": {
@@ -60,11 +62,13 @@
       "stale": 0.4,
       "missing": 0.4
     },
-    "outward_signal_freshness": 1.0
+    "outward_signal_freshness": 1.0,
+    "pre_refresh_age_hours": 48.01,
+    "pre_refresh_dock": 0.4
   },
   "notes": {
     "automation_primary": "fb6b558c-e940-4941-99c2-3c2cd4eaec99",
-    "top_ranked": "refresh-if-docked",
+    "top_ranked": "skill-consolidator-rerun",
     "forbidden": "near-duplicate recursive/compound/task-domain skills",
     "load_set": [
       "capability-growth-core",
@@ -85,6 +89,6 @@
       ],
       "rule": "Every cycle MUST pull from GitHub before execute and push after. Local artifacts alone do not survive."
     },
-    "freshness_rule": "dock 0.4 and withhold snapshot bonus if live-snapshot.json missing or generated_at older than 36h"
+    "freshness_rule": "dock 0.4 and withhold snapshot bonus if live-snapshot.json missing or generated_at older than 36h; execute via scripts/refresh-if-docked.py"
   }
 }
