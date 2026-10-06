@@ -1,8 +1,8 @@
 # Skill redundancy report
 
-Generated: 2026-10-01T10:33:36Z
+Generated: 2026-10-06T10:34:02Z
 Scanned: `/root/.grok/server-skills`
-Skills: 30 | aliases (do not load): 18 | sprawl_ratio: 0.6
+Skills: 30 | aliases (do not load): 18 | max_aliases: 18 | sprawl_gate: pass | sprawl_ratio: 0.6
 
 ## Load set (only these for a Compound Loop cycle)
 
@@ -46,5 +46,5 @@ These descriptions restate the same loop (create task domain, recursive compound
 
 1. Do not create a skill whose name or description contains recursive, compound, task-domain, autonomy, forge, evolver, orchestrator, or vanguard.
 2. New capability goes in `scripts/` or `knowledge/`, not a new skill.
-3. Re-run this script each cycle. If alias_count rises, the cycle failed the sprawl constraint.
+3. Re-run this script each cycle. Exit code is the gate: 1 if alias_count > --max-aliases (default 18).
 

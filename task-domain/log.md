@@ -62,3 +62,10 @@
 - Post-score: reason=fresh, dock=0.0, outward=1.0, composite=0.9.
 - Wrote scripts/refresh-if-docked.py. Dry-run on fresh snapshot refreshed=false.
 - skills_created=0. scripts_added=4. cycle_count=8.
+
+## Cycle 9 — 2026-10-06T10:34:10Z
+
+- BOOTSTRAP loaded cycle_count=8 from GitHub. Top TAKE: re-run skill-consolidator; fail if alias_count > 18.
+- Snapshot still fresh (generated_at 2026-10-05T10:34:13Z, 36h line 2026-10-06T22:34:13Z). Did not refresh.
+- Extended scripts/skill-consolidator.py. --max-aliases 18 exited 0 (alias_count=18, sprawl_ratio=0.6, sprawl_gate=pass). --max-aliases 0 self-test exited 1.
+- Wrote knowledge/sprawl-gate.md. skills_created=0. scripts_added stays 4 (extension). cycle_count=9.

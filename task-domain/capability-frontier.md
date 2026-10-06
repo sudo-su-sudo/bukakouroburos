@@ -73,3 +73,9 @@
 - New possible: run `python3 artifacts/scripts/refresh-if-docked.py` and have a missing or >36h snapshot refresh before scoring, with zero briefing
 - Artifact: `scripts/refresh-if-docked.py`, `knowledge/live-snapshot.json` (generated_at 2026-10-05T10:34:13Z), `knowledge/live-brief.md`
 - Why it compounds: the cycle-7 dock was a number a human still had to notice. The 48h production dock fired, closed (0.4 → 1.0), and the conditional is now a command. Next 36h line is 2026-10-06T22:34:13Z.
+
+## Cycle 9 — 2026-10-06 — Alias ceiling is an exit code
+
+- New possible: run `python3 artifacts/scripts/skill-consolidator.py --max-aliases 18` and have the process exit 1 if alias_count rises above the cycle-4 baseline, with zero briefing
+- Artifact: `scripts/skill-consolidator.py`, `knowledge/sprawl-gate.md`, `task-domain/skill-canonical-map.json` (sprawl_gate=pass, alias_count=18)
+- Why it compounds: the fail condition was a queue sentence. It is now a command a later cycle can threshold. Self-test with --max-aliases 0 exited 1.

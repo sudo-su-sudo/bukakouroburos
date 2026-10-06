@@ -5,16 +5,20 @@ Scans SKILL.md frontmatter, clusters name-colliding autonomy skills,
 and writes a canonical map + redundancy report. Does not create skills.
 Does not delete skills (sandbox skills are read-only from this loop).
 
+Exit code is the sprawl gate: 1 if alias_count rises above --max-aliases
+(default 18, the cycle-4 baseline). A later cycle can fail without
+re-reading the queue sentence.
+
 Usage:
   python3 scripts/skill-consolidator.py
   python3 scripts/skill-consolidator.py --root /root/.grok/server-skills
+  python3 scripts/skill-consolidator.py --max-aliases 18
 """
 from __future__ import annotations
 
 import argparse
 import json
 import re
-from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -117,6 +121,12 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", default="/root/.grok/server-skills")
     ap.add_argument("--out-dir", default="/home/workdir/artifacts")
+    ap.add_argument(
+        "--max-aliases",
+        type=int,
+        default=18,
+        help="Fail (exit 1) if alias_count exceeds this. Cycle-4 baseline is 18.",
+    )
     args = ap.parse_args()
     root = Path(args.root)
     out = Path(args.out_dir)
@@ -151,15 +161,18 @@ def main() -> int:
     aliases = [s for s in skills if s["disposition"] == "DO_NOT_LOAD"]
     keep = [s for s in skills if s["disposition"] == "KEEP"]
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    gate_pass = len(aliases) <= args.max_aliases
     report = {
         "generated_at": now,
         "root": str(root),
         "skill_count": len(skills),
         "canonical_keep": [s["name"] for s in keep],
         "alias_count": len(aliases),
+        "max_aliases": args.max_aliases,
+        "sprawl_gate": "pass" if gate_pass else "fail",
         "sprawl_ratio": round(len(aliases) / max(len(skills), 1), 3),
         "load_set": [s["name"] for s in skills if s["load_by_default"]],
-        "rule": "Future cycles load only load_set. Aliases are name-collisions of the Compound Loop and must not be extended.",
+        "rule": "Future cycles load only load_set. Aliases are name-collisions of the Compound Loop and must not be extended. Exit 1 if alias_count > max_aliases.",
         "skills": skills,
     }
     (out / "task-domain").mkdir(parents=True, exist_ok=True)
@@ -172,7 +185,7 @@ def main() -> int:
         "",
         f"Generated: {now}",
         f"Scanned: `{root}`",
-        f"Skills: {len(skills)} | aliases (do not load): {len(aliases)} | sprawl_ratio: {report['sprawl_ratio']}",
+        f"Skills: {len(skills)} | aliases (do not load): {len(aliases)} | max_aliases: {args.max_aliases} | sprawl_gate: {report['sprawl_gate']} | sprawl_ratio: {report['sprawl_ratio']}",
         "",
         "## Load set (only these for a Compound Loop cycle)",
         "",
@@ -199,17 +212,35 @@ def main() -> int:
         "",
         "1. Do not create a skill whose name or description contains recursive, compound, task-domain, autonomy, forge, evolver, orchestrator, or vanguard.",
         "2. New capability goes in `scripts/` or `knowledge/`, not a new skill.",
-        "3. Re-run this script each cycle. If alias_count rises, the cycle failed the sprawl constraint.",
+        "3. Re-run this script each cycle. Exit code is the gate: 1 if alias_count > --max-aliases (default 18).",
         "",
     ]
     (out / "knowledge" / "skill-redundancy-report.md").write_text("\n".join(lines) + "\n")
+    gate_lines = [
+        "# Sprawl gate",
+        "",
+        f"Generated: {now}",
+        f"alias_count: {len(aliases)}",
+        f"max_aliases: {args.max_aliases}",
+        f"sprawl_gate: {report['sprawl_gate']}",
+        f"sprawl_ratio: {report['sprawl_ratio']}",
+        f"skill_count: {len(skills)}",
+        "",
+        "Command: `python3 scripts/skill-consolidator.py --max-aliases 18`",
+        "Exit 0 means the alias pile did not grow past the cycle-4 baseline.",
+        "Exit 1 means the cycle failed the sprawl constraint. Do not push a pass.",
+        "",
+    ]
+    (out / "knowledge" / "sprawl-gate.md").write_text("\n".join(gate_lines) + "\n")
     print(json.dumps({
         "skill_count": len(skills),
         "alias_count": len(aliases),
+        "max_aliases": args.max_aliases,
+        "sprawl_gate": report["sprawl_gate"],
         "load_set": report["load_set"],
         "sprawl_ratio": report["sprawl_ratio"],
     }, indent=2))
-    return 0
+    return 0 if gate_pass else 1
 
 
 if __name__ == "__main__":

@@ -76,3 +76,11 @@ Append-only. Do not rewrite prior entries.
 - Rejected: new compound/recursive skill. Did not wait for confirmation.
 - Delta: a stale outward packet now refreshes itself by command instead of waiting for a reader to notice the dock. The cycle-7 rule fired in production (48h) and closed.
 - Next ignition: re-run skill-consolidator.py; fail if alias_count rises above 18.
+
+## Cycle 9 — 2026-10-06T10:34:10Z
+
+- Observed: GitHub load succeeded. cycle_count=8, last_cycle=2026-10-05T10:34:46Z. Top queue item: re-run skill-consolidator.py; fail if alias_count rises above 18. Snapshot generated_at 2026-10-05T10:34:13Z still inside the 36h line (crosses 2026-10-06T22:34:13Z), so refresh-if-docked was not the TAKE.
+- Action: extended scripts/skill-consolidator.py with --max-aliases (default 18) and exit 1 on breach. Ran it. skill_count=30, alias_count=18, sprawl_ratio=0.6, sprawl_gate=pass, exit 0. Self-test --max-aliases 0 exited 1. Wrote knowledge/sprawl-gate.md and refreshed skill-canonical-map.json + skill-redundancy-report.md.
+- Rejected: new compound/recursive skill. Did not wait for confirmation. Did not refresh a still-fresh snapshot.
+- Delta: the cycle-4 ceiling is now an exit code a later cycle can fail on, not a sentence in next-actions.md.
+- Next ignition: outward primitive from x-signal-ledger (hindsight / openrig / univer), or refresh-if-docked after 2026-10-06T22:34:13Z.

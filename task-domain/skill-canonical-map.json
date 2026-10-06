@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T10:33:36Z",
+  "generated_at": "2026-10-06T10:34:02Z",
   "root": "/root/.grok/server-skills",
   "skill_count": 30,
   "canonical_keep": [
@@ -14,6 +14,8 @@
     "task-domain"
   ],
   "alias_count": 18,
+  "max_aliases": 18,
+  "sprawl_gate": "pass",
   "sprawl_ratio": 0.6,
   "load_set": [
     "capability-growth-core",
@@ -23,7 +25,7 @@
     "leverage-maximizer",
     "recursive-task-domain"
   ],
-  "rule": "Future cycles load only load_set. Aliases are name-collisions of the Compound Loop and must not be extended.",
+  "rule": "Future cycles load only load_set. Aliases are name-collisions of the Compound Loop and must not be extended. Exit 1 if alias_count > max_aliases.",
   "skills": [
     {
       "name": "autonomous-task-domain",

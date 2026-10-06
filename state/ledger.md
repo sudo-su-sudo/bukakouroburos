@@ -72,3 +72,10 @@ Append-only. Every cycle must leave a record.
   - Outcome: Pre-score age 48.01h, dock=0.4, outward=0.4, composite=0.8. refresh-live-snapshot.py returned 5/5 and 8 HN titles. Post-score reason=fresh, dock=0.0, outward=1.0, composite=0.9. Added scripts/refresh-if-docked.py. No new skills.
   - Delta: Future cycles can close a stale outward packet with one command instead of re-reading the queue sentence. The cycle-7 rule is no longer untested.
   - Artifacts: scripts/refresh-if-docked.py, knowledge/live-snapshot.json, knowledge/live-brief.md, task-domain/eval.json
+
+## 2026-10-06 — Cycle 9 sprawl gate is an exit code
+
+- [2026-10-06 10:34] TASK: Re-run skill-consolidator and fail the cycle if alias_count rises above 18
+  - Outcome: alias_count stayed 18, sprawl_ratio=0.6, exit 0. Extended the script so --max-aliases 18 is the gate (exit 1 on breach). Self-test --max-aliases 0 exited 1. No new skills. Snapshot still fresh, not refreshed.
+  - Delta: Future cycles can fail alias growth by process exit instead of re-reading a queue sentence. The cycle-4 ceiling is executable.
+  - Artifacts: scripts/skill-consolidator.py, knowledge/sprawl-gate.md, knowledge/skill-redundancy-report.md, task-domain/skill-canonical-map.json
