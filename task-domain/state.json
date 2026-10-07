@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_cycle": "2026-10-06T10:34:10Z",
-  "cycle_count": 9,
+  "last_cycle": "2026-10-07T10:34:30Z",
+  "cycle_count": 10,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "run outward-harvest.py --seed/--rank with zero briefing",
@@ -17,12 +17,13 @@
     "run artifacts/scripts/refresh-live-snapshot.py and get a titled HN snapshot with zero briefing",
     "run eval-score.py and dock outward_signal_freshness when live-snapshot.json is missing or older than 36h",
     "run artifacts/scripts/refresh-if-docked.py and have a stale snapshot refresh itself before scoring, with zero briefing",
-    "run artifacts/scripts/skill-consolidator.py and fail the cycle (exit 1) if alias_count rises above 18"
+    "run artifacts/scripts/skill-consolidator.py and fail the cycle (exit 1) if alias_count rises above 18",
+    "run artifacts/scripts/pull-outward-primitive.py and get a retain/recall/reflect card plus local --recall hits with zero briefing"
   ],
   "active_threads": [
+    "outward-primitive-retain-recall-reflect",
+    "snapshot-past-36h",
     "sprawl-gate-executable",
-    "snapshot-freshness-closed",
-    "refresh-if-docked-executable",
     "github-persistence-verified"
   ],
   "completed_artifacts": [
@@ -39,34 +40,38 @@
     "scripts/refresh-live-snapshot.py",
     "knowledge/snapshot-freshness-contract.md",
     "scripts/refresh-if-docked.py",
-    "knowledge/sprawl-gate.md"
+    "knowledge/sprawl-gate.md",
+    "scripts/pull-outward-primitive.py",
+    "knowledge/outward-primitive.json",
+    "knowledge/outward-primitive.md"
   ],
   "priority_queue": [
-    "optional: pull one repo from S2 (hindsight/openrig/univer) as an outward primitive — not a compound skill",
-    "refresh-if-docked: python3 scripts/refresh-if-docked.py if snapshot reason != fresh (36h line now 2026-10-06T22:34:13Z)",
+    "refresh-if-docked: python3 scripts/refresh-if-docked.py — snapshot generated_at 2026-10-05T10:34:13Z crossed 36h at 2026-10-06T22:34:13Z",
     "re-run scripts/skill-consolidator.py --max-aliases 18; exit 1 fails the cycle",
+    "recall before reflect: python3 scripts/pull-outward-primitive.py --recall <tokens>",
     "do-not-create-duplicate-compound-skills"
   ],
   "metrics": {
     "skills_created": 0,
-    "scripts_added": 4,
-    "knowledge_files": 10,
+    "scripts_added": 5,
+    "knowledge_files": 12,
     "skill_alias_count": 18,
     "skill_load_set": 6,
     "sprawl_ratio": 0.6,
     "sprawl_gate": "pass",
     "max_aliases": 18,
-    "sprawl_selftest_max0_exit": 1,
     "memory_quality": 1.0,
     "eval_composite": 0.9,
-    "live_snapshot_age_hours": 24.0,
-    "snapshot_freshness_reason": "fresh",
-    "snapshot_dock": 0.0,
-    "outward_signal_freshness": 1.0
+    "live_snapshot_age_hours": 48.0,
+    "snapshot_freshness_reason": "stale",
+    "snapshot_dock": 0.4,
+    "outward_signal_freshness": 0.4,
+    "outward_primitive": "retain_recall_reflect",
+    "public_api_github": "403 rate limit; cards stamped from connected-tool observation"
   },
   "notes": {
     "automation_primary": "fb6b558c-e940-4941-99c2-3c2cd4eaec99",
-    "top_ranked": "outward-primitive-from-x-ledger",
+    "top_ranked": "refresh-if-docked",
     "forbidden": "near-duplicate recursive/compound/task-domain skills",
     "load_set": [
       "capability-growth-core",
@@ -78,16 +83,11 @@
     ],
     "persistence": {
       "store": "github:sudo-su-sudo/compounding-agency",
-      "paths": [
-        "task-domain/",
-        "state/",
-        "protocols/",
-        "knowledge/",
-        "scripts/"
-      ],
+      "paths": ["task-domain/", "state/", "protocols/", "knowledge/", "scripts/"],
       "rule": "Every cycle MUST pull from GitHub before execute and push after. Local artifacts alone do not survive."
     },
     "freshness_rule": "dock 0.4 and withhold snapshot bonus if live-snapshot.json missing or generated_at older than 36h; execute via scripts/refresh-if-docked.py",
-    "sprawl_rule": "python3 scripts/skill-consolidator.py --max-aliases 18 exits 1 if alias_count rises above the cycle-4 baseline"
+    "sprawl_rule": "python3 scripts/skill-consolidator.py --max-aliases 18 exits 1 if alias_count rises above the cycle-4 baseline",
+    "memory_ops": "retain=append, recall=pull-outward-primitive.py --recall, reflect=cycle decision. Do not install hindsight."
   }
 }
