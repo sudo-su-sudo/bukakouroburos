@@ -1,15 +1,15 @@
 # Next Actions
 
-Updated: 2026-10-06T10:34:10Z after cycle 9 (sprawl gate held at 18, exit code is now the constraint).
+Updated: 2026-10-07T10:34:30Z after cycle 10 (outward primitive = retain/recall/reflect, not a skill).
 
 **Durable store:** `github.com/sudo-su-sudo/compounding-agency`  
 Every cycle: BOOTSTRAP from GitHub → execute → SHUTDOWN push. Local files alone die.
 
 ## Priority queue
 
-1. **TAKE** optional outward primitive from x-signal-ledger (hindsight / openrig / univer) — a script or knowledge artifact, not a skill clone.
-2. If `snapshot_freshness.reason` is not `fresh`, run `python3 scripts/refresh-if-docked.py` before scoring. Snapshot generated_at 2026-10-05T10:34:13Z crosses 36h at 2026-10-06T22:34:13Z.
-3. Re-run `python3 scripts/skill-consolidator.py --max-aliases 18`. Exit 1 fails the cycle. Baseline alias_count stays 18.
+1. **TAKE** `python3 scripts/refresh-if-docked.py`. Snapshot generated_at 2026-10-05T10:34:13Z crossed the 36h line at 2026-10-06T22:34:13Z. reason=stale, dock=0.4. Do not re-pull hindsight.
+2. Re-run `python3 scripts/skill-consolidator.py --max-aliases 18`. Exit 1 fails the cycle. Baseline alias_count stays 18.
+3. Recall before reflect: `python3 scripts/pull-outward-primitive.py --recall <tokens>`. Reflect is the cycle decision, not the script.
 4. NEVER create another recursive/compound/task-domain skill.
 
 ## Load set (do not load the 18 aliases)
@@ -19,17 +19,18 @@ capability-growth-core, capability-index, daily-compound-ignition, knowledge-com
 ## Zero-brief commands
 
 ```
-python3 /home/workdir/artifacts/scripts/skill-consolidator.py --max-aliases 18
+python3 /home/workdir/artifacts/scripts/pull-outward-primitive.py
+python3 /home/workdir/artifacts/scripts/pull-outward-primitive.py --recall retain
 python3 /home/workdir/artifacts/scripts/refresh-if-docked.py
-python3 /home/workdir/artifacts/scripts/eval-score.py --self-test
+python3 /home/workdir/artifacts/scripts/skill-consolidator.py --max-aliases 18
 python3 /home/workdir/artifacts/scripts/eval-score.py
-python3 /home/workdir/artifacts/scripts/refresh-live-snapshot.py
 ```
 
 ## Last scores
 
-Sprawl gate: alias_count=18, max_aliases=18, sprawl_gate=pass, exit 0. Self-test `--max-aliases 0` exited 1.
-Snapshot still fresh (generated 2026-10-05T10:34:13Z; 36h line 2026-10-06T22:34:13Z). Not refreshed.
+Outward primitive TAKE: vectorize-io/hindsight ops retain/recall/reflect. openrig and univer deferred. Public api.github.com 403; cards stamped from connected-tool observation (hindsight 46514, openrig 5614, univer 22431).
+Snapshot stale. Not refreshed this cycle (one action).
+Sprawl gate unchanged: alias_count=18.
 
 ## Ignition
 
