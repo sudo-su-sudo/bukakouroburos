@@ -79,3 +79,10 @@ Append-only. Every cycle must leave a record.
   - Outcome: alias_count stayed 18, sprawl_ratio=0.6, exit 0. Extended the script so --max-aliases 18 is the gate (exit 1 on breach). Self-test --max-aliases 0 exited 1. No new skills. Snapshot still fresh, not refreshed.
   - Delta: Future cycles can fail alias growth by process exit instead of re-reading a queue sentence. The cycle-4 ceiling is executable.
   - Artifacts: scripts/skill-consolidator.py, knowledge/sprawl-gate.md, knowledge/skill-redundancy-report.md, task-domain/skill-canonical-map.json
+
+## 2026-10-07 — Cycle 10 outward primitive
+
+- [2026-10-07 10:34] TASK: Pull one S2 repo as an outward primitive, not a skill
+  - Outcome: TAKE vectorize-io/hindsight ops retain/recall/reflect. openrig and univer deferred with reasons. Public api.github.com 403; metadata stamped from authenticated search (46514 / 5614 / 22431). Added scripts/pull-outward-primitive.py and knowledge/outward-primitive.{json,md}. No new skills.
+  - Delta: Future cycles can recall file hits with one command and must not call that reflection. The cycle-2 shortlist is no longer a paragraph to re-interpret.
+  - Artifacts: scripts/pull-outward-primitive.py, knowledge/outward-primitive.json, knowledge/outward-primitive.md; commit 7f52f33b
