@@ -84,3 +84,11 @@ Append-only. Do not rewrite prior entries.
 - Rejected: new compound/recursive skill. Did not wait for confirmation. Did not refresh a still-fresh snapshot.
 - Delta: the cycle-4 ceiling is now an exit code a later cycle can fail on, not a sentence in next-actions.md.
 - Next ignition: outward primitive from x-signal-ledger (hindsight / openrig / univer), or refresh-if-docked after 2026-10-06T22:34:13Z.
+
+## Cycle 10 — 2026-10-07T10:34:30Z
+
+- Observed: GitHub load succeeded. cycle_count=9, last_cycle=2026-10-06T10:34:10Z. Top queue item: pull one repo from S2 (hindsight / openrig / univer) as an outward primitive, not a compound skill. Snapshot generated_at 2026-10-05T10:34:13Z had already crossed 36h (line 2026-10-06T22:34:13Z); left as next TAKE so this cycle stayed one action.
+- Action: wrote scripts/pull-outward-primitive.py. Authenticated search resolved vectorize-io/hindsight (46514, MIT), mvschwarz/openrig (5614, Apache-2.0), dream-num/univer (22431, branch dev). Public api.github.com returned 403 rate limit; cards stamped from that observation. TAKE = hindsight retain/recall/reflect. openrig deferred (needs tmux/Node/provider CLIs). univer deferred (local office skills already cover the composition point). Local recall is `--recall` file search, no LLM. Reflect stays a cycle decision.
+- Rejected: installing hindsight, cloning openrig, wrapping univer, creating a compound skill.
+- Delta: future cycles can name retain vs recall vs reflect and run recall as a command instead of re-reading the X ledger to remember which repo was the primitive.
+- Next ignition: refresh-if-docked (snapshot stale).
