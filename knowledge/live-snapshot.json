@@ -1,1 +1,69 @@
-PLACEHOLDER
+{
+  "generated_at": "2026-10-08T10:35:45Z",
+  "endpoints": [
+    {
+      "name": "frankfurter_usd_eur",
+      "url": "https://api.frankfurter.app/latest?from=USD&to=EUR",
+      "ok": true,
+      "summary": {
+        "amount": 1.0,
+        "base": "USD",
+        "date": "2026-10-07",
+        "rates": {"EUR": 0.89469}
+      }
+    },
+    {
+      "name": "open_meteo_nyc",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=40.71&longitude=-74.01&current_weather=true",
+      "ok": true,
+      "summary": {
+        "latitude": 40.710335,
+        "longitude": -73.99308,
+        "timezone": "GMT",
+        "current_weather": {
+          "time": "2026-10-08T10:30",
+          "temperature": 13.3,
+          "windspeed": 16.6,
+          "winddirection": 229,
+          "weathercode": 0
+        }
+      }
+    },
+    {
+      "name": "usgs_quakes_day",
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson",
+      "ok": true,
+      "summary": [
+        {"mag": 5.1, "place": "236 km E of Levuka, Fiji", "time": 1791454048642},
+        {"mag": 6.3, "place": "102 km NE of Norsup, Vanuatu", "time": 1791450007768},
+        {"mag": 2.7, "place": "50 km W of Nanwalek, Alaska", "time": 1791448568236},
+        {"mag": 2.7, "place": "2 km WNW of Fontana, CA", "time": 1791446943220},
+        {"mag": 5.5, "place": "17 km SW of Burias, Philippines", "time": 1791446879114}
+      ]
+    },
+    {
+      "name": "hn_top",
+      "url": "https://hacker-news.firebaseio.com/v0/topstories.json",
+      "ok": true,
+      "summary": {"top_ids_sample": [50002008, 49996437, 49959280, 49970767, 49998895, 50002426, 49996425, 49969073]},
+      "stories": [
+        {"id": 50002008, "title": "Math 2.0 will need to value mathematical progress more holistically", "url": "https://mathstodon.xyz/@tao/117395269325940185", "score": 298, "by": "ent101"},
+        {"id": 49996437, "title": "Claude Haiku 5.5", "url": "https://www.anthropic.com/claude-haiku-5-5", "score": 891, "by": "sfkgtbor"},
+        {"id": 49959280, "title": "The 15-year search for a band that charted once and vanished", "url": "https://shahidhussain.com/writing/search-for-salvage/", "score": 114, "by": "shahidhussain"},
+        {"id": 49970767, "title": "Living off-grid: Hundred Rabbits", "url": "https://100r.ca/site/home.html", "score": 221, "by": "Muhammad523"},
+        {"id": 49998895, "title": "Margaret Hamilton has died", "url": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007", "score": 1571, "by": "muglug"},
+        {"id": 50002426, "title": "Classic PC demoscene productions running natively in the browser", "url": "https://treylorswift.github.io/demoscene-recomp/web/", "score": 77, "by": "adunk"},
+        {"id": 49996425, "title": "GPT-6 and Intelligent UI for everyone", "url": "https://openai.com/index/gpt-6-for-everyone/", "score": 642, "by": "joshuawright11"},
+        {"id": 49969073, "title": "How did Rosalind Franklin miss the helix in her iconic DNA image? She didn't", "url": "https://www.science.org/content/article/how-did-rosalind-franklin-miss-helix-her-iconic-dna-image-she-didn-t", "score": 182, "by": "pavel_lishin"}
+      ]
+    },
+    {
+      "name": "wttr_nyc",
+      "url": "https://wttr.in/NewYork?format=j1",
+      "ok": true,
+      "summary": {"current_condition": [{"temp_C": "29", "temp_F": "85", "humidity": "67", "weatherDesc": [{"value": "Overcast"}], "windspeedKmph": "8"}]}
+    }
+  ],
+  "enriched_at": "2026-10-08T10:35:47Z",
+  "enrichment": "hn titles resolved so future cycles read headlines without a second fetch"
+}
