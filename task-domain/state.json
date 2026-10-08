@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_cycle": "2026-10-07T10:34:30Z",
-  "cycle_count": 10,
+  "last_cycle": "2026-10-08T10:36:08Z",
+  "cycle_count": 11,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "run outward-harvest.py --seed/--rank with zero briefing",
@@ -18,11 +18,12 @@
     "run eval-score.py and dock outward_signal_freshness when live-snapshot.json is missing or older than 36h",
     "run artifacts/scripts/refresh-if-docked.py and have a stale snapshot refresh itself before scoring, with zero briefing",
     "run artifacts/scripts/skill-consolidator.py and fail the cycle (exit 1) if alias_count rises above 18",
-    "run artifacts/scripts/pull-outward-primitive.py and get a retain/recall/reflect card plus local --recall hits with zero briefing"
+    "run artifacts/scripts/pull-outward-primitive.py and get a retain/recall/reflect card plus local --recall hits with zero briefing",
+    "load a titled snapshot generated 2026-10-08T10:35:45Z (5/5 endpoints, 8 HN titles) instead of the stale 2026-10-05 packet"
   ],
   "active_threads": [
     "outward-primitive-retain-recall-reflect",
-    "snapshot-past-36h",
+    "snapshot-fresh-until-2026-10-09T22:35:45Z",
     "sprawl-gate-executable",
     "github-persistence-verified"
   ],
@@ -46,9 +47,9 @@
     "knowledge/outward-primitive.md"
   ],
   "priority_queue": [
-    "refresh-if-docked: python3 scripts/refresh-if-docked.py — snapshot generated_at 2026-10-05T10:34:13Z crossed 36h at 2026-10-06T22:34:13Z",
     "re-run scripts/skill-consolidator.py --max-aliases 18; exit 1 fails the cycle",
     "recall before reflect: python3 scripts/pull-outward-primitive.py --recall <tokens>",
+    "refresh-if-docked only if snapshot generated_at 2026-10-08T10:35:45Z crosses 36h at 2026-10-09T22:35:45Z",
     "do-not-create-duplicate-compound-skills"
   ],
   "metrics": {
@@ -61,17 +62,22 @@
     "sprawl_gate": "pass",
     "max_aliases": 18,
     "memory_quality": 1.0,
-    "eval_composite": 0.9,
-    "live_snapshot_age_hours": 48.0,
-    "snapshot_freshness_reason": "stale",
-    "snapshot_dock": 0.4,
-    "outward_signal_freshness": 0.4,
+    "eval_composite": 0.858,
+    "live_snapshot_age_hours": 0.0,
+    "snapshot_freshness_reason": "fresh",
+    "snapshot_dock": 0.0,
+    "outward_signal_freshness": 1.0,
+    "snapshot_generated_at": "2026-10-08T10:35:45Z",
+    "snapshot_next_36h_line": "2026-10-09T22:35:45Z",
+    "endpoints_ok": "5/5",
+    "hn_titles": 8,
     "outward_primitive": "retain_recall_reflect",
-    "public_api_github": "403 rate limit; cards stamped from connected-tool observation"
+    "zero_brief_scripts": 0.75,
+    "zero_brief_note": "skill-consolidator.py not staged in this sandbox; still on main"
   },
   "notes": {
     "automation_primary": "fb6b558c-e940-4941-99c2-3c2cd4eaec99",
-    "top_ranked": "refresh-if-docked",
+    "top_ranked": "skill-consolidator",
     "forbidden": "near-duplicate recursive/compound/task-domain skills",
     "load_set": [
       "capability-growth-core",
