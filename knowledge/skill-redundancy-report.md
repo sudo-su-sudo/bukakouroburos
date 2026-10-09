@@ -1,6 +1,6 @@
 # Skill redundancy report
 
-Generated: 2026-10-06T10:34:02Z
+Generated: 2026-10-09T10:34:32Z
 Scanned: `/root/.grok/server-skills`
 Skills: 30 | aliases (do not load): 18 | max_aliases: 18 | sprawl_gate: pass | sprawl_ratio: 0.6
 

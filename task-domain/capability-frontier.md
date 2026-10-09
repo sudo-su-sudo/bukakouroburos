@@ -26,3 +26,8 @@
 - New possible: load a titled no-key world snapshot generated 2026-10-08T10:35:45Z instead of the 2026-10-05 packet that crossed 36h.
 - Artifact: knowledge/live-snapshot.json, knowledge/live-brief.md
 - Why it compounds: refresh-if-docked fired in production (missing locally, stale on main) and closed the dock. Next 36h line is 2026-10-09T22:35:45Z.
+
+## Cycle 12 — 2026-10-09 — Alias set is diffable
+- New possible: run skill-consolidator.py --prior-map and get added/removed alias names, not only a count that can stay 18 while the set swaps.
+- Artifact: knowledge/sprawl-delta.json, task-domain/skill-canonical-map.json (generated_at 2026-10-09T10:34:32Z)
+- Why it compounds: cold sandbox executed the gate (exit 0). Set unchanged vs 2026-10-06. Named the three description-only clones the name-gate misses: task-engine, task-evolution, task-evolution-domain.

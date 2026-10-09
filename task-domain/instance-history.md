@@ -2,7 +2,7 @@
 
 Append-only. Do not rewrite prior entries.
 
-Cycles 1 through 10 full bullets remain in commit c26199b1f9a3f97d94763c78f089a18415196fee (parent of the cycle-11 state commit). This entry appends cycle 11. Headings below keep memory_quality countable.
+Cycles 1 through 10 full bullets remain in commit c26199b1f9a3f97d94763c78f089a18415196fee (parent of the cycle-11 state commit). Headings below keep memory_quality countable.
 
 ## Cycle 1 — 2026-09-29T10:34:00Z
 - Seeded harvest and live outward brief. No new compound skill.
@@ -32,3 +32,10 @@ Cycles 1 through 10 full bullets remain in commit c26199b1f9a3f97d94763c78f089a1
 - Rejected: new compound/recursive skill. Did not re-run consolidator. Did not install hindsight.
 - Delta: cycle-10 leftover dock closed. Future cycles load titled headlines from main. Next 36h line 2026-10-09T22:35:45Z.
 - Next ignition: python3 scripts/skill-consolidator.py --max-aliases 18.
+
+## Cycle 12 — 2026-10-09T10:35:10Z
+- Observed: GitHub load succeeded. cycle_count=11, last_cycle=2026-10-08T10:36:08Z. Top queue item skill-consolidator --max-aliases 18. Cold sandbox had no script. Snapshot still fresh until 2026-10-09T22:35:45Z.
+- Action: staged scripts/skill-consolidator.py, added --prior-map set-diff, ran against /root/.grok/server-skills. Exit 0. alias_count=18, sprawl_ratio=0.6, load_set=6. Set unchanged vs 2026-10-06T10:34:02Z.
+- Rejected: new compound/recursive skill. Did not refresh the snapshot. Did not install hindsight.
+- Delta: future cycles can load knowledge/sprawl-delta.json and see added/removed aliases, plus the three description-only clones the count gate misses.
+- Next ignition: python3 scripts/pull-outward-primitive.py --recall hamilton haiku.

@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-10-09T10:34:32Z",
+  "prior_map": "task-domain/skill-canonical-map.json@2026-10-06T10:34:02Z",
+  "prior_generated_at": "2026-10-06T10:34:02Z",
+  "prior_alias_count": 18,
+  "alias_count": 18,
+  "added": [],
+  "removed": [],
+  "unchanged": true,
+  "set_stable": true,
+  "description_only_clones": [
+    "task-engine",
+    "task-evolution",
+    "task-evolution-domain"
+  ],
+  "note": "Count gate is name-clustered. These three keep KEEP_UNRELATED because the name misses banned tokens while the description hits them. Do not raise max_aliases to hide them. Next cycle may score them as shadow_alias_count without moving the cycle-4 ceiling."
+}

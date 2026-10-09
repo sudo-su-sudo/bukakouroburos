@@ -127,6 +127,11 @@ def main() -> int:
         default=18,
         help="Fail (exit 1) if alias_count exceeds this. Cycle-4 baseline is 18.",
     )
+    ap.add_argument(
+        "--prior-map",
+        default="",
+        help="Optional prior skill-canonical-map.json. Writes a set-diff receipt.",
+    )
     args = ap.parse_args()
     root = Path(args.root)
     out = Path(args.out_dir)
@@ -232,6 +237,29 @@ def main() -> int:
         "",
     ]
     (out / "knowledge" / "sprawl-gate.md").write_text("\n".join(gate_lines) + "\n")
+
+    prior_path = Path(args.prior_map) if args.prior_map else None
+    delta = {
+        "generated_at": now,
+        "prior_map": str(prior_path) if prior_path else None,
+        "alias_count": len(aliases),
+        "added": [],
+        "removed": [],
+        "unchanged": True,
+    }
+    if prior_path and prior_path.exists():
+        prior = json.loads(prior_path.read_text())
+        prior_aliases = {
+            s["name"] for s in prior.get("skills", []) if s.get("disposition") == "DO_NOT_LOAD"
+        }
+        now_aliases = {s["name"] for s in aliases}
+        delta["prior_generated_at"] = prior.get("generated_at")
+        delta["added"] = sorted(now_aliases - prior_aliases)
+        delta["removed"] = sorted(prior_aliases - now_aliases)
+        delta["unchanged"] = not delta["added"] and not delta["removed"]
+        delta["prior_alias_count"] = prior.get("alias_count")
+    (out / "knowledge" / "sprawl-delta.json").write_text(json.dumps(delta, indent=2) + "\n")
+
     print(json.dumps({
         "skill_count": len(skills),
         "alias_count": len(aliases),
@@ -239,6 +267,9 @@ def main() -> int:
         "sprawl_gate": report["sprawl_gate"],
         "load_set": report["load_set"],
         "sprawl_ratio": report["sprawl_ratio"],
+        "delta_added": delta["added"],
+        "delta_removed": delta["removed"],
+        "delta_unchanged": delta["unchanged"],
     }, indent=2))
     return 0 if gate_pass else 1
 

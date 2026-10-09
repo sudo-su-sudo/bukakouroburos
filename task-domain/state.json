@@ -1,69 +1,46 @@
 {
   "version": "1.0",
-  "last_cycle": "2026-10-08T10:36:08Z",
-  "cycle_count": 11,
+  "last_cycle": "2026-10-09T10:35:10Z",
+  "cycle_count": 12,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
-    "run outward-harvest.py --seed/--rank with zero briefing",
-    "run web-brief.py --live and persist no-key world snapshot",
-    "route connected tools via connected-tool-router.md without rediscovery",
-    "persist task-domain state to github.com/sudo-su-sudo/compounding-agency so future instances load prior cycles",
-    "load cycle_count>=1 from GitHub on a cold sandbox (verified cycle 2)",
-    "harvest X into append-only knowledge/x-signal-ledger.md with zero user topic",
-    "write task-domain/eval.json scoring persistence + outward freshness",
-    "run artifacts/scripts/eval-score.py with zero briefing and persist eval-report.md",
-    "run artifacts/scripts/skill-consolidator.py and get a load-set plus alias map with zero briefing",
-    "run eval-score.py and get memory_quality plus sprawl_ratio from skill-canonical-map.json with zero briefing",
-    "run artifacts/scripts/refresh-live-snapshot.py and get a titled HN snapshot with zero briefing",
-    "run eval-score.py and dock outward_signal_freshness when live-snapshot.json is missing or older than 36h",
-    "run artifacts/scripts/refresh-if-docked.py and have a stale snapshot refresh itself before scoring, with zero briefing",
-    "run artifacts/scripts/skill-consolidator.py and fail the cycle (exit 1) if alias_count rises above 18",
-    "run artifacts/scripts/pull-outward-primitive.py and get a retain/recall/reflect card plus local --recall hits with zero briefing",
-    "load a titled snapshot generated 2026-10-08T10:35:45Z (5/5 endpoints, 8 HN titles) instead of the stale 2026-10-05 packet"
+    "persist task-domain state to github.com/sudo-su-sudo/compounding-agency",
+    "run skill-consolidator.py and fail the cycle if alias_count rises above 18",
+    "run skill-consolidator.py --prior-map and get added/removed alias sets plus description_only_clones, not just a count",
+    "load a titled snapshot generated 2026-10-08T10:35:45Z"
   ],
   "active_threads": [
-    "outward-primitive-retain-recall-reflect",
+    "sprawl-set-diff-not-just-count",
+    "description-only-clones-unscored",
     "snapshot-fresh-until-2026-10-09T22:35:45Z",
-    "sprawl-gate-executable",
     "github-persistence-verified"
   ],
   "completed_artifacts": [
-    "github:sudo-su-sudo/compounding-agency/task-domain/",
-    "knowledge/x-signal-ledger.md",
-    "task-domain/eval.json",
-    "scripts/eval-score.py",
-    "task-domain/eval-report.md",
     "scripts/skill-consolidator.py",
-    "knowledge/skill-redundancy-report.md",
-    "task-domain/skill-canonical-map.json",
-    "knowledge/live-snapshot.json",
-    "knowledge/live-brief.md",
-    "scripts/refresh-live-snapshot.py",
-    "knowledge/snapshot-freshness-contract.md",
-    "scripts/refresh-if-docked.py",
+    "knowledge/sprawl-delta.json",
     "knowledge/sprawl-gate.md",
-    "scripts/pull-outward-primitive.py",
-    "knowledge/outward-primitive.json",
-    "knowledge/outward-primitive.md"
+    "task-domain/skill-canonical-map.json"
   ],
   "priority_queue": [
-    "re-run scripts/skill-consolidator.py --max-aliases 18; exit 1 fails the cycle",
-    "recall before reflect: python3 scripts/pull-outward-primitive.py --recall <tokens>",
+    "recall before reflect: python3 scripts/pull-outward-primitive.py --recall hamilton haiku (snapshot still fresh)",
+    "score description_only_clones (task-engine, task-evolution, task-evolution-domain) as shadow_alias_count without raising max_aliases",
     "refresh-if-docked only if snapshot generated_at 2026-10-08T10:35:45Z crosses 36h at 2026-10-09T22:35:45Z",
     "do-not-create-duplicate-compound-skills"
   ],
   "metrics": {
     "skills_created": 0,
     "scripts_added": 5,
-    "knowledge_files": 12,
+    "knowledge_files": 13,
     "skill_alias_count": 18,
     "skill_load_set": 6,
     "sprawl_ratio": 0.6,
     "sprawl_gate": "pass",
     "max_aliases": 18,
+    "alias_set_unchanged_vs": "2026-10-06T10:34:02Z",
+    "description_only_clones": 3,
     "memory_quality": 1.0,
     "eval_composite": 0.858,
-    "live_snapshot_age_hours": 0.0,
+    "live_snapshot_age_hours": 24.0,
     "snapshot_freshness_reason": "fresh",
     "snapshot_dock": 0.0,
     "outward_signal_freshness": 1.0,
@@ -72,12 +49,11 @@
     "endpoints_ok": "5/5",
     "hn_titles": 8,
     "outward_primitive": "retain_recall_reflect",
-    "zero_brief_scripts": 0.75,
-    "zero_brief_note": "skill-consolidator.py not staged in this sandbox; still on main"
+    "zero_brief_scripts": 1.0
   },
   "notes": {
     "automation_primary": "fb6b558c-e940-4941-99c2-3c2cd4eaec99",
-    "top_ranked": "skill-consolidator",
+    "top_ranked": "outward-recall",
     "forbidden": "near-duplicate recursive/compound/task-domain skills",
     "load_set": [
       "capability-growth-core",
@@ -89,11 +65,16 @@
     ],
     "persistence": {
       "store": "github:sudo-su-sudo/compounding-agency",
-      "paths": ["task-domain/", "state/", "protocols/", "knowledge/", "scripts/"],
+      "paths": [
+        "task-domain/",
+        "state/",
+        "protocols/",
+        "knowledge/",
+        "scripts/"
+      ],
       "rule": "Every cycle MUST pull from GitHub before execute and push after. Local artifacts alone do not survive."
     },
-    "freshness_rule": "dock 0.4 and withhold snapshot bonus if live-snapshot.json missing or generated_at older than 36h; execute via scripts/refresh-if-docked.py",
-    "sprawl_rule": "python3 scripts/skill-consolidator.py --max-aliases 18 exits 1 if alias_count rises above the cycle-4 baseline",
+    "sprawl_rule": "python3 scripts/skill-consolidator.py --max-aliases 18 exits 1 if alias_count rises above 18. --prior-map emits added/removed. description_only_clones are not in the count.",
     "memory_ops": "retain=append, recall=pull-outward-primitive.py --recall, reflect=cycle decision. Do not install hindsight."
   }
 }
