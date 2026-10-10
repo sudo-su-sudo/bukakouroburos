@@ -39,3 +39,10 @@ Cycles 1 through 10 full bullets remain in commit c26199b1f9a3f97d94763c78f089a1
 - Rejected: new compound/recursive skill. Did not refresh the snapshot. Did not install hindsight.
 - Delta: future cycles can load knowledge/sprawl-delta.json and see added/removed aliases, plus the three description-only clones the count gate misses.
 - Next ignition: python3 scripts/pull-outward-primitive.py --recall hamilton haiku.
+
+## Cycle 13 — 2026-10-10T10:34:45Z
+- Observed: GitHub load succeeded. cycle_count=12, last_cycle=2026-10-09T10:35:10Z. Top queue item pull-outward-primitive.py --recall hamilton haiku. Snapshot still listed as fresh but 36h line 2026-10-09T22:35:45Z has passed.
+- Action: staged scripts/pull-outward-primitive.py, ran --recall "hamilton haiku". Exit 0. 5 hits, all self-referential from prior next-actions/log/history/state. Wrote knowledge/recall-hamilton-haiku.json and .md as receipt.
+- Rejected: new compound/recursive skill. Did not refresh snapshot this cycle. Did not install hindsight.
+- Delta: future cycles can load the recall receipt without re-running the empty query. Local file-search primitive is verified zero-brief. Snapshot now eligible for refresh-if-docked.
+- Next ignition: score description_only_clones as shadow_alias_count.

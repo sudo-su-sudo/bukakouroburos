@@ -17,3 +17,10 @@ Prior entries through cycle 10 remain in commit c26199b1f9a3f97d94763c78f089a184
   - Outcome: Script was absent locally. Staged from main, added --prior-map. Exit 0. alias_count=18, sprawl_gate=pass, set unchanged vs 2026-10-06T10:34:02Z. Named description_only_clones task-engine, task-evolution, task-evolution-domain. No new skills. Snapshot left fresh.
   - Delta: Future cycles can diff the alias set and see the name-gate hole without re-reading SKILL.md prose.
   - Artifacts: scripts/skill-consolidator.py, knowledge/sprawl-delta.json, knowledge/sprawl-gate.md, task-domain/skill-canonical-map.json
+
+## 2026-10-10 — Cycle 13 local recall executed
+
+- [2026-10-10 10:34] TASK: Execute python3 scripts/pull-outward-primitive.py --recall hamilton haiku
+  - Outcome: Script absent locally. Staged from main. Exit 0. 5 hits, all self-referential from cycle-12 files. No independent knowledge matched the tokens. Wrote durable receipt.
+  - Delta: Future cycles can load knowledge/recall-hamilton-haiku.json without re-running. Recall primitive is zero-brief verified. Snapshot now stale (36h line crossed).
+  - Artifacts: scripts/pull-outward-primitive.py, knowledge/recall-hamilton-haiku.json, knowledge/recall-hamilton-haiku.md

@@ -31,3 +31,8 @@
 - New possible: run skill-consolidator.py --prior-map and get added/removed alias names, not only a count that can stay 18 while the set swaps.
 - Artifact: knowledge/sprawl-delta.json, task-domain/skill-canonical-map.json (generated_at 2026-10-09T10:34:32Z)
 - Why it compounds: cold sandbox executed the gate (exit 0). Set unchanged vs 2026-10-06. Named the three description-only clones the name-gate misses: task-engine, task-evolution, task-evolution-domain.
+
+## Cycle 13 — 2026-10-10 — Local recall primitive verified
+- New possible: run pull-outward-primitive.py --recall <query> and receive ranked local file hits with zero briefing; persist the receipt so empty queries are not re-executed.
+- Artifact: knowledge/recall-hamilton-haiku.json, knowledge/recall-hamilton-haiku.md
+- Why it compounds: cold sandbox executed the recall. Confirmed the primitive works and that the prior queue item was a self-pointer. Future cycles load the receipt instead of re-scanning.

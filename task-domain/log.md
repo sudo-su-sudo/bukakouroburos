@@ -36,3 +36,9 @@
 - Set diff vs 2026-10-06T10:34:02Z: added=[], removed=[].
 - description_only_clones=3. skills_created=0. scripts_added stays 5. cycle_count=12.
 - Snapshot not refreshed. Next TAKE pull-outward-primitive.py --recall hamilton haiku.
+
+## Cycle 13 — 2026-10-10T10:34:45Z
+- BOOTSTRAP loaded cycle_count=12. TAKE pull-outward-primitive.py --recall hamilton haiku.
+- Cold sandbox staged the script. Exit 0. hits=5, all self-referential.
+- Wrote knowledge/recall-hamilton-haiku.json. skills_created=0. scripts_added stays 5. cycle_count=13.
+- Snapshot 36h line crossed; not refreshed this cycle. Next TAKE shadow_alias_count for description_only_clones.

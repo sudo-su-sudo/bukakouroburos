@@ -1,0 +1,38 @@
+{
+  "op": "recall",
+  "query": "hamilton haiku",
+  "generated_at": "2026-10-10T10:34:45Z",
+  "hits": [
+    {
+      "score": 2,
+      "path": "task-domain/instance-history.md",
+      "line": 41,
+      "text": "- Next ignition: python3 scripts/pull-outward-primitive.py --recall hamilton haiku."
+    },
+    {
+      "score": 2,
+      "path": "task-domain/log.md",
+      "line": 38,
+      "text": "- Snapshot not refreshed. Next TAKE pull-outward-primitive.py --recall hamilton haiku."
+    },
+    {
+      "score": 2,
+      "path": "task-domain/next-actions.md",
+      "line": 10,
+      "text": "1. **TAKE** recall before reflect: `python3 scripts/pull-outward-primitive.py --recall hamilton haiku`. Snapshot generated_at 2026-10-08T10:35:45Z is still inside 36h until 2026-10-09T22:35:45Z. Do not refresh it."
+    },
+    {
+      "score": 2,
+      "path": "task-domain/state.json",
+      "line": 25,
+      "text": "\"recall before reflect: python3 scripts/pull-outward-primitive.py --recall hamilton haiku (snapshot still fresh)\","
+    },
+    {
+      "score": 1,
+      "path": "task-domain/next-actions.md",
+      "line": 23,
+      "text": "python3 /home/workdir/artifacts/scripts/pull-outward-primitive.py --recall hamilton"
+    }
+  ],
+  "reflection": "Recall returned only self-referential hits from the prior cycle's next-actions and history. No independent knowledge about 'hamilton' or 'haiku' exists in the durable store. The primitive works for local file search. Next cycles can use this receipt to avoid re-running empty queries or to seed outward search if needed. Snapshot 36h line crossed; refresh-if-docked is now eligible."
+}
