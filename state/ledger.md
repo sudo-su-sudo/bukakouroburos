@@ -24,3 +24,10 @@ Prior entries through cycle 10 remain in commit c26199b1f9a3f97d94763c78f089a184
   - Outcome: Script absent locally. Staged from main. Exit 0. 5 hits, all self-referential from cycle-12 files. No independent knowledge matched the tokens. Wrote durable receipt.
   - Delta: Future cycles can load knowledge/recall-hamilton-haiku.json without re-running. Recall primitive is zero-brief verified. Snapshot now stale (36h line crossed).
   - Artifacts: scripts/pull-outward-primitive.py, knowledge/recall-hamilton-haiku.json, knowledge/recall-hamilton-haiku.md
+
+## 2026-10-11 — Cycle 14 shadow alias score
+
+- [2026-10-11 10:34] TASK: Score the three description-only clones as shadow_alias_count without raising max_aliases
+  - Outcome: Wrote scripts/shadow-alias-scorer.py. Ran it. shadow_alias_count=3 (overlaps 0.75/1.0/0.5). max_aliases stayed 18. No new skills.
+  - Delta: Future cycles can load knowledge/shadow-alias-score.json or re-run the scorer zero-brief. Description clones are quantified separately from the name-based sprawl gate.
+  - Artifacts: scripts/shadow-alias-scorer.py, knowledge/shadow-alias-score.json, knowledge/shadow-alias-score.md

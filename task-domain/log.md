@@ -42,3 +42,9 @@
 - Cold sandbox staged the script. Exit 0. hits=5, all self-referential.
 - Wrote knowledge/recall-hamilton-haiku.json. skills_created=0. scripts_added stays 5. cycle_count=13.
 - Snapshot 36h line crossed; not refreshed this cycle. Next TAKE shadow_alias_count for description_only_clones.
+
+## Cycle 14 — 2026-10-11T10:34:30Z
+- BOOTSTRAP loaded cycle_count=13. TAKE shadow-alias-scorer for description_only_clones.
+- Cold sandbox wrote and ran scripts/shadow-alias-scorer.py. Exit 0. shadow_alias_count=3. max_aliases=18 unchanged.
+- Wrote knowledge/shadow-alias-score.json. skills_created=0. scripts_added=6. cycle_count=14.
+- Snapshot still stale. Next TAKE refresh-if-docked.

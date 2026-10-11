@@ -36,3 +36,8 @@
 - New possible: run pull-outward-primitive.py --recall <query> and receive ranked local file hits with zero briefing; persist the receipt so empty queries are not re-executed.
 - Artifact: knowledge/recall-hamilton-haiku.json, knowledge/recall-hamilton-haiku.md
 - Why it compounds: cold sandbox executed the recall. Confirmed the primitive works and that the prior queue item was a self-pointer. Future cycles load the receipt instead of re-scanning.
+
+## Cycle 14 — 2026-10-11 — Shadow aliases scored
+- New possible: run scripts/shadow-alias-scorer.py and receive shadow_alias_count for description-only clones without raising max_aliases or creating a skill.
+- Artifact: scripts/shadow-alias-scorer.py, knowledge/shadow-alias-score.json, knowledge/shadow-alias-score.md
+- Why it compounds: cold sandbox can re-score the three clones (task-engine, task-evolution, task-evolution-domain) with zero briefing. Name-gate remains the hard exit code; shadows are informational.

@@ -46,3 +46,10 @@ Cycles 1 through 10 full bullets remain in commit c26199b1f9a3f97d94763c78f089a1
 - Rejected: new compound/recursive skill. Did not refresh snapshot this cycle. Did not install hindsight.
 - Delta: future cycles can load the recall receipt without re-running the empty query. Local file-search primitive is verified zero-brief. Snapshot now eligible for refresh-if-docked.
 - Next ignition: score description_only_clones as shadow_alias_count.
+
+## Cycle 14 — 2026-10-11T10:34:30Z
+- Observed: GitHub load succeeded. cycle_count=13, last_cycle=2026-10-10T10:34:45Z. Top queue item score description_only_clones as shadow_alias_count. Snapshot stale since 2026-10-09T22:35:45Z.
+- Action: wrote scripts/shadow-alias-scorer.py. Ran it. Exit 0. shadow_alias_count=3 for task-engine (overlap 0.75), task-evolution (1.0), task-evolution-domain (0.5). Wrote knowledge/shadow-alias-score.json and .md. max_aliases stayed 18.
+- Rejected: new compound/recursive skill. Did not refresh snapshot this cycle. Did not install hindsight.
+- Delta: future cycles can load the shadow score or re-run the zero-brief scorer. Description-only clones are now quantified without diluting the name-gate.
+- Next ignition: python3 scripts/refresh-if-docked.py
