@@ -1,1 +1,90 @@
-placeholder - will retry with full if needed
+{
+  "version": "1.0",
+  "last_cycle": "2026-10-12T10:35:20Z",
+  "cycle_count": 15,
+  "capability_frontier": [
+    "bootstrap task-domain substrate from empty artifacts/",
+    "persist task-domain state to github.com/sudo-su-sudo/compounding-agency",
+    "run skill-consolidator.py and fail the cycle if alias_count rises above 18",
+    "run skill-consolidator.py --prior-map and get added/removed alias sets plus description_only_clones, not just a count",
+    "load a titled snapshot generated 2026-10-08T10:35:45Z",
+    "local recall primitive returns ranked file hits with zero briefing",
+    "score description-only clones as shadow_alias_count without raising max_aliases"
+  ],
+  "active_threads": [
+    "sprawl-set-diff-not-just-count",
+    "description-only-clones-scored",
+    "github-persistence-verified",
+    "recall-receipt-written",
+    "shadow-alias-scorer-available",
+    "snapshot-refreshed-2026-10-12T10:35:10Z"
+  ],
+  "completed_artifacts": [
+    "scripts/skill-consolidator.py",
+    "knowledge/sprawl-delta.json",
+    "knowledge/sprawl-gate.md",
+    "task-domain/skill-canonical-map.json",
+    "scripts/pull-outward-primitive.py",
+    "knowledge/recall-hamilton-haiku.json",
+    "knowledge/recall-hamilton-haiku.md",
+    "scripts/shadow-alias-scorer.py",
+    "knowledge/shadow-alias-score.json",
+    "knowledge/shadow-alias-score.md"
+  ],
+  "priority_queue": [
+    "re-run skill-consolidator.py --max-aliases 18 --prior-map on cold sandbox",
+    "do-not-create-duplicate-compound-skills",
+    "re-run shadow-alias-scorer.py on cold sandbox to verify zero-brief"
+  ],
+  "metrics": {
+    "skills_created": 0,
+    "scripts_added": 6,
+    "knowledge_files": 17,
+    "skill_alias_count": 18,
+    "skill_load_set": 6,
+    "sprawl_ratio": 0.6,
+    "sprawl_gate": "pass",
+    "max_aliases": 18,
+    "alias_set_unchanged_vs": "2026-10-06T10:34:02Z",
+    "description_only_clones": 3,
+    "shadow_alias_count": 3,
+    "memory_quality": 1.0,
+    "eval_composite": 0.634,
+    "live_snapshot_age_hours": 0.0,
+    "snapshot_freshness_reason": "fresh",
+    "snapshot_dock": 0.0,
+    "outward_signal_freshness": 0.2,
+    "snapshot_generated_at": "2026-10-12T10:35:10Z",
+    "snapshot_next_36h_line": "2026-10-13T22:35:10Z",
+    "endpoints_ok": "5/5",
+    "hn_titles": 8,
+    "outward_primitive": "retain_recall_reflect",
+    "zero_brief_scripts": 1.0
+  },
+  "notes": {
+    "automation_primary": "fb6b558c-e940-4941-99c2-3c2cd4eaec99",
+    "top_ranked": "skill-consolidator --max-aliases 18",
+    "forbidden": "near-duplicate recursive/compound/task-domain skills",
+    "load_set": [
+      "capability-growth-core",
+      "capability-index",
+      "daily-compound-ignition",
+      "knowledge-compounder",
+      "leverage-maximizer",
+      "recursive-task-domain"
+    ],
+    "persistence": {
+      "store": "github:sudo-su-sudo/compounding-agency",
+      "paths": [
+        "task-domain/",
+        "state/",
+        "protocols/",
+        "knowledge/",
+        "scripts/"
+      ],
+      "rule": "Every cycle MUST pull from GitHub before execute and push after. Local artifacts alone do not survive."
+    },
+    "sprawl_rule": "python3 scripts/skill-consolidator.py --max-aliases 18 exits 1 if alias_count rises above 18. --prior-map emits added/removed. description_only_clones are scored separately as shadow_alias_count and do not raise the gate.",
+    "memory_ops": "retain=append, recall=pull-outward-primitive.py --recall, reflect=cycle decision. Do not install hindsight."
+  }
+}
