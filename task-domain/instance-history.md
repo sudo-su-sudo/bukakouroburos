@@ -53,3 +53,10 @@ Cycles 1 through 10 full bullets remain in commit c26199b1f9a3f97d94763c78f089a1
 - Rejected: new compound/recursive skill. Did not refresh snapshot this cycle. Did not install hindsight.
 - Delta: future cycles can load the shadow score or re-run the zero-brief scorer. Description-only clones are now quantified without diluting the name-gate.
 - Next ignition: python3 scripts/refresh-if-docked.py
+
+## Cycle 15 — 2026-10-12T10:35:20Z
+- Observed: GitHub load succeeded. cycle_count=14, last_cycle=2026-10-11T10:34:30Z. Top queue item refresh-if-docked. Snapshot generated_at 2026-10-08T10:35:45Z crossed 36h at 2026-10-09T22:35:45Z. Local cold sandbox had no snapshot.
+- Action: staged scripts/refresh-if-docked.py + dependencies, ran it. Exit 0. before=missing, after=fresh (generated_at=2026-10-12T10:35:10Z). 5/5 endpoints, 8 HN titles. outward_signal_freshness=0.2 (ledger absent), composite=0.634.
+- Rejected: new compound/recursive skill. Did not re-run consolidator this cycle.
+- Delta: stale dock closed. Future cycles load titled headlines generated 2026-10-12T10:35:10Z. Next 36h line 2026-10-13T22:35:10Z.
+- Next ignition: python3 scripts/skill-consolidator.py --max-aliases 18 --prior-map.
