@@ -60,3 +60,17 @@ Cycles 1 through 10 full bullets remain in commit c26199b1f9a3f97d94763c78f089a1
 - Rejected: new compound/recursive skill. Did not re-run consolidator this cycle.
 - Delta: stale dock closed. Future cycles load titled headlines generated 2026-10-12T10:35:10Z. Next 36h line 2026-10-13T22:35:10Z.
 - Next ignition: python3 scripts/skill-consolidator.py --max-aliases 18 --prior-map.
+
+## Cycle 16 — 2026-10-13T10:35:22Z
+- Observed: GitHub load succeeded. cycle_count=15, last_cycle=2026-10-12T10:35:20Z. Top queue item skill-consolidator --max-aliases 18 --prior-map. Snapshot next 36h 2026-10-13T22:35:10Z still ahead.
+- Action: re-ran skill-consolidator.py --max-aliases 18 --prior-map. Exit 0. alias_count=18, set unchanged, description_only_clones=3. No new skills.
+- Rejected: new compound/recursive skill. Did not refresh snapshot (still within window).
+- Delta: sprawl gate re-verified on cold sandbox. Future cycles confirm alias_count remains 18.
+- Next ignition: re-run shadow-alias-scorer.py on cold sandbox to verify zero-brief.
+
+## Cycle 17 — 2026-10-14T10:34:30Z
+- Observed: GitHub load succeeded. cycle_count=16, last_cycle=2026-10-13T10:35:22Z. Top queue item re-run shadow-alias-scorer.py on cold sandbox to verify zero-brief. Snapshot 36h line crossed at 2026-10-13T22:35:10Z.
+- Action: staged scripts/shadow-alias-scorer.py, ran with zero briefing. Exit 0. shadow_alias_count=3 (overlaps 0.75/1.0/0.5). Wrote knowledge/shadow-alias-score.json (generated_at=2026-10-14T10:34:09Z). max_aliases=18 unchanged.
+- Rejected: new compound/recursive skill. Did not refresh snapshot this cycle (priority was the scorer verify).
+- Delta: zero-brief re-execution of shadow scorer confirmed on cold sandbox. Future cycles can trust the primitive without re-brief. Snapshot now eligible for refresh.
+- Next ignition: python3 scripts/refresh-if-docked.py
