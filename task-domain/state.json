@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_cycle": "2026-10-13T10:35:22Z",
-  "cycle_count": 16,
+  "last_cycle": "2026-10-14T10:34:30Z",
+  "cycle_count": 17,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "persist task-domain state to github.com/sudo-su-sudo/compounding-agency",
@@ -9,7 +9,8 @@
     "run skill-consolidator.py --prior-map and get added/removed alias sets plus description_only_clones, not just a count",
     "load a titled snapshot generated 2026-10-08T10:35:45Z",
     "local recall primitive returns ranked file hits with zero briefing",
-    "score description-only clones as shadow_alias_count without raising max_aliases"
+    "score description-only clones as shadow_alias_count without raising max_aliases",
+    "re-run shadow-alias-scorer.py zero-brief on cold sandbox verifies count=3"
   ],
   "active_threads": [
     "sprawl-set-diff-not-just-count",
@@ -17,7 +18,8 @@
     "github-persistence-verified",
     "recall-receipt-written",
     "shadow-alias-scorer-available",
-    "snapshot-refreshed-2026-10-12T10:35:10Z"
+    "snapshot-refreshed-2026-10-12T10:35:10Z",
+    "shadow-scorer-zero-brief-verified"
   ],
   "completed_artifacts": [
     "scripts/skill-consolidator.py",
@@ -32,9 +34,9 @@
     "knowledge/shadow-alias-score.md"
   ],
   "priority_queue": [
-    "re-run shadow-alias-scorer.py on cold sandbox to verify zero-brief",
+    "refresh-if-docked if snapshot ages past 36h",
     "do-not-create-duplicate-compound-skills",
-    "refresh-if-docked if snapshot ages past 36h"
+    "re-score shadow aliases after any skill change"
   ],
   "metrics": {
     "skills_created": 0,
@@ -50,9 +52,9 @@
     "shadow_alias_count": 3,
     "memory_quality": 1.0,
     "eval_composite": 0.634,
-    "live_snapshot_age_hours": 0.0,
-    "snapshot_freshness_reason": "fresh",
-    "snapshot_dock": 0.0,
+    "live_snapshot_age_hours": 48.0,
+    "snapshot_freshness_reason": "stale",
+    "snapshot_dock": 0.4,
     "outward_signal_freshness": 0.2,
     "snapshot_generated_at": "2026-10-12T10:35:10Z",
     "snapshot_next_36h_line": "2026-10-13T22:35:10Z",
@@ -63,7 +65,7 @@
   },
   "notes": {
     "automation_primary": "fb6b558c-e940-4941-99c2-3c2cd4eaec99",
-    "top_ranked": "skill-consolidator --max-aliases 18",
+    "top_ranked": "refresh-if-docked",
     "forbidden": "near-duplicate recursive/compound/task-domain skills",
     "load_set": [
       "capability-growth-core",

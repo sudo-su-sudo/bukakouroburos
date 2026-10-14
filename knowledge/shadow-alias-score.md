@@ -1,6 +1,6 @@
 # Shadow Alias Score
 
-Generated: 2026-10-11T10:34:23Z
+Generated: 2026-10-14T10:34:09Z
 shadow_alias_count: 3
 max_aliases remains 18 (unchanged).
 

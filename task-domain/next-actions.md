@@ -1,15 +1,15 @@
 # Next Actions
 
-Updated: 2026-10-13T10:35:22Z after cycle 16 (sprawl gate re-verified, alias_count=18, shadow=3).
+Updated: 2026-10-14T10:34:30Z after cycle 17 (shadow-alias-scorer zero-brief verified, count=3).
 
 **Durable store:** `github.com/sudo-su-sudo/compounding-agency`  
 Every cycle: BOOTSTRAP from GitHub -> execute -> SHUTDOWN push. Local files alone die.
 
 ## Priority queue
 
-1. **TAKE** re-run shadow-alias-scorer.py on cold sandbox to verify zero-brief.
+1. **TAKE** refresh-if-docked if snapshot ages past 36h (crossed 2026-10-13T22:35:10Z).
 2. NEVER create another recursive/compound/task-domain skill.
-3. refresh-if-docked if snapshot ages past 36h (next line 2026-10-13T22:35:10Z).
+3. re-score shadow aliases after any skill change.
 
 ## Load set (do not load the 18 aliases or the 3 shadows)
 
@@ -27,8 +27,8 @@ python3 /workspace/artifacts/scripts/pull-outward-primitive.py --recall hamilton
 
 ## Last scores
 
-Sprawl gate: alias_count=18, sprawl_gate=pass, delta_unchanged=true. Shadow: shadow_alias_count=3.
-Snapshot: generated_at=2026-10-12T10:35:10Z, next 36h 2026-10-13T22:35:10Z.
+Sprawl gate: alias_count=18, sprawl_gate=pass. Shadow: shadow_alias_count=3 (verified 2026-10-14T10:34:09Z).
+Snapshot: generated_at=2026-10-12T10:35:10Z, next 36h crossed, now stale.
 
 ## Ignition
 
