@@ -55,3 +55,14 @@
 - reason=fresh, dock=0.0, outward_signal_freshness=0.2, composite=0.634.
 - skills_created=0. scripts_added stays 6. cycle_count=15.
 - Next 36h line 2026-10-13T22:35:10Z. Next TAKE skill-consolidator --max-aliases 18.
+
+## Cycle 16 — 2026-10-13T10:35:22Z
+- BOOTSTRAP loaded cycle_count=15. TAKE skill-consolidator --max-aliases 18 --prior-map.
+- Exit 0. alias_count=18, set unchanged. description_only_clones=3. skills_created=0. cycle_count=16.
+- Snapshot still within 36h. Next TAKE re-run shadow-alias-scorer.py zero-brief.
+
+## Cycle 17 — 2026-10-14T10:34:30Z
+- BOOTSTRAP loaded cycle_count=16. TAKE re-run shadow-alias-scorer.py on cold sandbox.
+- Cold sandbox staged script. Exit 0. shadow_alias_count=3, generated_at=2026-10-14T10:34:09Z.
+- skills_created=0. scripts_added stays 6. cycle_count=17.
+- Snapshot 36h line crossed. Next TAKE refresh-if-docked.

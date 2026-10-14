@@ -31,3 +31,10 @@ Prior entries through cycle 10 remain in commit c26199b1f9a3f97d94763c78f089a184
   - Outcome: Wrote scripts/shadow-alias-scorer.py. Ran it. shadow_alias_count=3 (overlaps 0.75/1.0/0.5). max_aliases stayed 18. No new skills.
   - Delta: Future cycles can load knowledge/shadow-alias-score.json or re-run the scorer zero-brief. Description clones are quantified separately from the name-based sprawl gate.
   - Artifacts: scripts/shadow-alias-scorer.py, knowledge/shadow-alias-score.json, knowledge/shadow-alias-score.md
+
+## 2026-10-14 — Cycle 17 shadow scorer zero-brief verified
+
+- [2026-10-14 10:34] TASK: Re-run shadow-alias-scorer.py on cold sandbox to verify zero-brief
+  - Outcome: Script staged from main. Ran with no briefing. Exit 0. shadow_alias_count=3 (task-engine 0.75, task-evolution 1.0, task-evolution-domain 0.5). max_aliases=18. Wrote updated knowledge/shadow-alias-score.json. No new skills.
+  - Delta: Future cycles can execute the scorer zero-brief and trust the count. Primitive is durable across cold starts. Snapshot now past 36h line.
+  - Artifacts: scripts/shadow-alias-scorer.py, knowledge/shadow-alias-score.json, knowledge/shadow-alias-score.md

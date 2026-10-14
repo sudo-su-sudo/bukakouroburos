@@ -41,3 +41,8 @@
 - New possible: run scripts/shadow-alias-scorer.py and receive shadow_alias_count for description-only clones without raising max_aliases or creating a skill.
 - Artifact: scripts/shadow-alias-scorer.py, knowledge/shadow-alias-score.json, knowledge/shadow-alias-score.md
 - Why it compounds: cold sandbox can re-score the three clones (task-engine, task-evolution, task-evolution-domain) with zero briefing. Name-gate remains the hard exit code; shadows are informational.
+
+## Cycle 17 — 2026-10-14 — Shadow scorer zero-brief re-verified
+- New possible: run scripts/shadow-alias-scorer.py on a cold sandbox with zero briefing and receive the same shadow_alias_count=3.
+- Artifact: knowledge/shadow-alias-score.json (generated_at 2026-10-14T10:34:09Z), scripts/shadow-alias-scorer.py
+- Why it compounds: cold sandbox executed the scorer without prior local copy of the knowledge file. Confirmed the primitive is durable and zero-brief. Name-gate remains hard; shadows stay informational.
