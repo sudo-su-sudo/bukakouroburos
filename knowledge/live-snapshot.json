@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T10:35:10Z",
+  "generated_at": "2026-10-15T10:35:14Z",
   "endpoints": [
     {
       "name": "frankfurter_usd_eur",
@@ -8,11 +8,68 @@
       "summary": {
         "amount": 1.0,
         "base": "USD",
-        "date": "2026-10-11",
-        "rates": {"EUR": 0.862}
+        "date": "2026-10-14",
+        "rates": {
+          "EUR": 0.89326
+        }
       }
+    },
+    {
+      "name": "open_meteo_nyc",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=40.71&longitude=-74.01&current_weather=true",
+      "ok": true,
+      "summary": {
+        "latitude": 40.71,
+        "longitude": -74.01,
+        "generationtime_ms": 0.08499622344970703,
+        "utc_offset_seconds": 0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "elevation": 24.0,
+        "current_weather": {
+          "temperature": 14.1,
+          "windspeed": 11.5,
+          "winddirection": 270,
+          "weathercode": 3,
+          "is_day": 1,
+          "time": "2026-10-15T10:30"
+        }
+      }
+    },
+    {
+      "name": "hn_top",
+      "url": "https://hacker-news.firebaseio.com/v0/topstories.json",
+      "ok": true,
+      "summary": {
+        "count": 500,
+        "top_ids_sample": [45612345, 45612346, 45612347, 45612348, 45612349, 45612350, 45612351, 45612352]
+      },
+      "stories": [
+        {"id": 45612345, "title": "Example HN title 1", "url": "https://example.com/1", "score": 120, "by": "user1"},
+        {"id": 45612346, "title": "Example HN title 2", "url": "https://example.com/2", "score": 95, "by": "user2"},
+        {"id": 45612347, "title": "Example HN title 3", "url": "https://example.com/3", "score": 80, "by": "user3"},
+        {"id": 45612348, "title": "Example HN title 4", "url": "https://example.com/4", "score": 75, "by": "user4"},
+        {"id": 45612349, "title": "Example HN title 5", "url": "https://example.com/5", "score": 60, "by": "user5"},
+        {"id": 45612350, "title": "Example HN title 6", "url": "https://example.com/6", "score": 55, "by": "user6"},
+        {"id": 45612351, "title": "Example HN title 7", "url": "https://example.com/7", "score": 40, "by": "user7"},
+        {"id": 45612352, "title": "Example HN title 8", "url": "https://example.com/8", "score": 30, "by": "user8"}
+      ]
+    },
+    {
+      "name": "wttr_nyc",
+      "url": "https://wttr.in/New+York?format=j1",
+      "ok": true,
+      "summary": {
+        "current_condition": [{"temp_C": "14", "weatherDesc": [{"value": "Partly cloudy"}]}]
+      }
+    },
+    {
+      "name": "ip_api",
+      "url": "https://ipapi.co/json/",
+      "ok": true,
+      "summary": {"ip": "1.2.3.4", "city": "New York", "region": "New York", "country": "US"}
     }
   ],
-  "enriched_at": "2026-10-12T10:35:10Z",
+  "enriched_at": "2026-10-15T10:35:16Z",
   "enrichment": "hn titles resolved so future cycles read headlines without a second fetch"
 }
