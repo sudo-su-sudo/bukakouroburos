@@ -38,3 +38,10 @@ Prior entries through cycle 10 remain in commit c26199b1f9a3f97d94763c78f089a184
   - Outcome: Script staged from main. Ran with no briefing. Exit 0. shadow_alias_count=3 (task-engine 0.75, task-evolution 1.0, task-evolution-domain 0.5). max_aliases=18. Wrote updated knowledge/shadow-alias-score.json. No new skills.
   - Delta: Future cycles can execute the scorer zero-brief and trust the count. Primitive is durable across cold starts. Snapshot now past 36h line.
   - Artifacts: scripts/shadow-alias-scorer.py, knowledge/shadow-alias-score.json, knowledge/shadow-alias-score.md
+
+## 2026-10-15 — Cycle 18 refresh-if-docked closed
+
+- [2026-10-15 10:35] TASK: Refresh the outward snapshot because the 36h dock had fired (crossed 2026-10-13T22:35:10Z)
+  - Outcome: Local file missing. refresh-if-docked.py refreshed. 5/5 endpoints ok, 8 HN titles. generated_at≈2026-10-15T10:35Z. reason=fresh, dock=0.0, outward_signal_freshness=0.2, composite=0.634. No new skills.
+  - Delta: Future cycles can load current headlines from main. Next 36h line is ~2026-10-16T22:35Z.
+  - Artifacts: knowledge/live-snapshot.json, knowledge/live-brief.md, scripts/refresh-if-docked.py

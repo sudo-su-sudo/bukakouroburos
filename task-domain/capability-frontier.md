@@ -46,3 +46,8 @@
 - New possible: run scripts/shadow-alias-scorer.py on a cold sandbox with zero briefing and receive the same shadow_alias_count=3.
 - Artifact: knowledge/shadow-alias-score.json (generated_at 2026-10-14T10:34:09Z), scripts/shadow-alias-scorer.py
 - Why it compounds: cold sandbox executed the scorer without prior local copy of the knowledge file. Confirmed the primitive is durable and zero-brief. Name-gate remains hard; shadows stay informational.
+
+## Cycle 18 — 2026-10-15 — Stale dock closed (cycle 18)
+- New possible: load a titled no-key world snapshot generated 2026-10-15T10:35Z instead of the 2026-10-12 packet that crossed 36h.
+- Artifact: knowledge/live-snapshot.json, knowledge/live-brief.md
+- Why it compounds: refresh-if-docked fired in production (missing locally, stale on main) and closed the dock. Next 36h line is ~2026-10-16T22:35Z.
