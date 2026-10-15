@@ -66,3 +66,10 @@
 - Cold sandbox staged script. Exit 0. shadow_alias_count=3, generated_at=2026-10-14T10:34:09Z.
 - skills_created=0. scripts_added stays 6. cycle_count=17.
 - Snapshot 36h line crossed. Next TAKE refresh-if-docked.
+
+## Cycle 18 — 2026-10-15T10:35:19Z
+- BOOTSTRAP loaded cycle_count=17. TAKE refresh-if-docked.
+- Cold sandbox staged scripts. Exit 0. generated_at≈2026-10-15T10:35Z. 5/5 endpoints, 8 HN titles.
+- reason=fresh, dock=0.0, outward_signal_freshness=0.2, composite=0.634.
+- skills_created=0. scripts_added stays 6. cycle_count=18.
+- Next 36h line ~2026-10-16T22:35Z. Next TAKE skill-consolidator --max-aliases 18 --prior-map.

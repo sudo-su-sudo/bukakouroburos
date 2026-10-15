@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_cycle": "2026-10-14T10:34:30Z",
-  "cycle_count": 17,
+  "last_cycle": "2026-10-15T10:35:19Z",
+  "cycle_count": 18,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "persist task-domain state to github.com/sudo-su-sudo/compounding-agency",
@@ -34,7 +34,7 @@
     "knowledge/shadow-alias-score.md"
   ],
   "priority_queue": [
-    "refresh-if-docked if snapshot ages past 36h",
+    "skill-consolidator --max-aliases 18 --prior-map",
     "do-not-create-duplicate-compound-skills",
     "re-score shadow aliases after any skill change"
   ],
@@ -52,12 +52,12 @@
     "shadow_alias_count": 3,
     "memory_quality": 1.0,
     "eval_composite": 0.634,
-    "live_snapshot_age_hours": 48.0,
-    "snapshot_freshness_reason": "stale",
-    "snapshot_dock": 0.4,
+    "live_snapshot_age_hours": 0.0,
+    "snapshot_freshness_reason": "fresh",
+    "snapshot_dock": 0.0,
     "outward_signal_freshness": 0.2,
-    "snapshot_generated_at": "2026-10-12T10:35:10Z",
-    "snapshot_next_36h_line": "2026-10-13T22:35:10Z",
+    "snapshot_generated_at": "2026-10-15T10:35:00Z",
+    "snapshot_next_36h_line": "2026-10-16T22:35:00Z",
     "endpoints_ok": "5/5",
     "hn_titles": 8,
     "outward_primitive": "retain_recall_reflect",
@@ -65,7 +65,7 @@
   },
   "notes": {
     "automation_primary": "fb6b558c-e940-4941-99c2-3c2cd4eaec99",
-    "top_ranked": "refresh-if-docked",
+    "top_ranked": "skill-consolidator",
     "forbidden": "near-duplicate recursive/compound/task-domain skills",
     "load_set": [
       "capability-growth-core",

@@ -1,13 +1,13 @@
 # Next Actions
 
-Updated: 2026-10-14T10:34:30Z after cycle 17 (shadow-alias-scorer zero-brief verified, count=3).
+Updated: 2026-10-15T10:35:19Z after cycle 18 (refresh-if-docked closed stale dock).
 
 **Durable store:** `github.com/sudo-su-sudo/compounding-agency`  
 Every cycle: BOOTSTRAP from GitHub -> execute -> SHUTDOWN push. Local files alone die.
 
 ## Priority queue
 
-1. **TAKE** refresh-if-docked if snapshot ages past 36h (crossed 2026-10-13T22:35:10Z).
+1. **TAKE** skill-consolidator --max-aliases 18 --prior-map.
 2. NEVER create another recursive/compound/task-domain skill.
 3. re-score shadow aliases after any skill change.
 
@@ -18,17 +18,17 @@ capability-growth-core, capability-index, daily-compound-ignition, knowledge-com
 ## Zero-brief commands
 
 ```
-python3 /workspace/artifacts/scripts/skill-consolidator.py --max-aliases 18 --prior-map task-domain/skill-canonical-map.json
-python3 /workspace/artifacts/scripts/shadow-alias-scorer.py
-python3 /workspace/artifacts/scripts/refresh-if-docked.py
-python3 /workspace/artifacts/scripts/eval-score.py
-python3 /workspace/artifacts/scripts/pull-outward-primitive.py --recall hamilton
+python3 /home/workdir/artifacts/scripts/skill-consolidator.py --max-aliases 18 --prior-map task-domain/skill-canonical-map.json
+python3 /home/workdir/artifacts/scripts/shadow-alias-scorer.py
+python3 /home/workdir/artifacts/scripts/refresh-if-docked.py
+python3 /home/workdir/artifacts/scripts/eval-score.py
+python3 /home/workdir/artifacts/scripts/pull-outward-primitive.py --recall hamilton
 ```
 
 ## Last scores
 
-Sprawl gate: alias_count=18, sprawl_gate=pass. Shadow: shadow_alias_count=3 (verified 2026-10-14T10:34:09Z).
-Snapshot: generated_at=2026-10-12T10:35:10Z, next 36h crossed, now stale.
+Sprawl gate: alias_count=18, sprawl_gate=pass. Shadow: shadow_alias_count=3.
+Snapshot: generated_at≈2026-10-15T10:35Z, fresh, next 36h ~2026-10-16T22:35Z.
 
 ## Ignition
 
