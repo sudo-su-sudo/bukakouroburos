@@ -1,0 +1,8 @@
+# Ledger
+
+## Cycle 20 — 2026-10-17T10:34:06Z
+
+Action: re-score shadow aliases via scripts/shadow-alias-scorer.py
+Outcome: shadow_alias_count=3 confirmed, knowledge artifacts updated.
+Delta: zero-brief scoring verified independently of prior state.
+Artifact paths: knowledge/shadow-alias-score.json, knowledge/shadow-alias-score.md, scripts/shadow-alias-scorer.py

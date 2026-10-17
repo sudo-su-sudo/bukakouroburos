@@ -53,7 +53,7 @@ def overlap_score(desc: str) -> float:
 
 def main() -> int:
     root = Path("/root/.grok/server-skills")
-    out = Path("/workspace/artifacts")
+    out = Path("/home/workdir/artifacts")  # adjusted for local
     shadows = []
     for skill_md in sorted(root.glob("*/SKILL.md")):
         text = skill_md.read_text(errors="replace")
