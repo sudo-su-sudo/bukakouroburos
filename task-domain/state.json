@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_cycle": "2026-10-17T10:34:06Z",
-  "cycle_count": 20,
+  "last_cycle": "2026-10-18T10:34:10Z",
+  "cycle_count": 21,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "persist task-domain state to github.com/sudo-su-sudo/compounding-agency",
@@ -10,7 +10,8 @@
     "load a titled snapshot generated 2026-10-08T10:35:45Z",
     "local recall primitive returns ranked file hits with zero briefing",
     "score description-only clones as shadow_alias_count without raising max_aliases",
-    "re-run shadow-alias-scorer.py zero-brief on cold sandbox verifies count=3"
+    "re-run shadow-alias-scorer.py zero-brief on cold sandbox verifies count=3",
+    "re-run shadow-alias-scorer.py zero-brief on cold sandbox verifies count=3 (cycle 21)"
   ],
   "active_threads": [
     "sprawl-set-diff-not-just-count",
@@ -36,7 +37,8 @@
   "priority_queue": [
     "re-score shadow aliases after any skill change",
     "do-not-create-duplicate-compound-skills",
-    "skill-consolidator --max-aliases 18 --prior-map"
+    "skill-consolidator --max-aliases 18 --prior-map",
+    "refresh outward primitive zero-brief"
   ],
   "metrics": {
     "skills_created": 0,

@@ -10,3 +10,5 @@
 - local recall primitive returns ranked file hits with zero briefing
 - score description-only clones as shadow_alias_count without raising max_aliases
 - re-run shadow-alias-scorer.py zero-brief on cold sandbox verifies count=3 (verified cycle 20: 2026-10-17T10:34:01Z)
+
+- re-run shadow-alias-scorer.py zero-brief on cold sandbox verifies count=3 (verified cycle 21: 2026-10-18T10:34:14Z)
