@@ -1,6 +1,6 @@
 # Next Actions
 
-Updated: 2026-10-18T10:34:14Z after cycle 21 (shadow-alias-scorer re-run zero-brief, count remains 3).
+Updated: 2026-10-19T10:33:56Z after cycle 22 (shadow-alias-scorer re-run zero-brief, count remains 3).
 
 **Durable store:** `github.com/sudo-su-sudo/compounding-agency`  
 Every cycle: BOOTSTRAP from GitHub -> execute -> SHUTDOWN push. Local files alone die.
@@ -28,7 +28,7 @@ python3 /home/workdir/artifacts/scripts/pull-outward-primitive.py --recall hamil
 
 ## Last scores
 
-Sprawl gate: alias_count=18, sprawl_gate=pass, delta_unchanged=true. Shadow: shadow_alias_count=3 (re-verified 2026-10-18T10:34:01Z).
+Sprawl gate: alias_count=18, sprawl_gate=pass, delta_unchanged=true. Shadow: shadow_alias_count=3 (re-verified 2026-10-19T10:33:53Z).
 Snapshot: generated_at≈2026-10-15T10:35Z, fresh, next 36h ~2026-10-16T22:35Z.
 
 ## Ignition

@@ -11,3 +11,10 @@ Observed: priority queue top "re-score shadow aliases after any skill change". S
 Executed: pulled and ran scripts/shadow-alias-scorer.py zero-brief. Confirmed shadow_alias_count=3. Knowledge artifacts refreshed.
 Capability delta: zero-brief shadow scoring remains independently executable on cold start; no new skills; sprawl gate intact.
 Next: continue zero-brief outward and scoring primitives.
+
+## Cycle 22 — 2026-10-19T10:33:56Z
+
+Observed: priority queue top "re-score shadow aliases after any skill change". Skills unchanged.
+Executed: pulled and ran scripts/shadow-alias-scorer.py zero-brief. Confirmed shadow_alias_count=3. Knowledge artifacts refreshed with current timestamp.
+Capability delta: zero-brief shadow scoring independently executable on cold start verified again; no new skills; sprawl gate intact.
+Next: continue zero-brief outward and scoring primitives.
