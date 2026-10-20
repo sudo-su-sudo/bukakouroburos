@@ -25,3 +25,10 @@ Observed: priority queue top "re-score shadow aliases after any skill change". S
 Executed: pulled and ran scripts/shadow-alias-scorer.py zero-brief. Confirmed shadow_alias_count=3. Knowledge artifacts refreshed with 2026-10-20T10:33:59Z timestamp.
 Capability delta: zero-brief shadow scoring independently executable on cold start verified again; no new skills; sprawl gate intact.
 Next: continue zero-brief outward and scoring primitives.
+
+## Cycle 24 — 2026-10-20T22:10:00Z
+
+Observed: user requested integration of the Autonomous Research Build Loop (7-track roster, 10-milestone cursor, MOCA anchors, Drive archive) into the existing GitHub-backed Compound Loop.
+Executed: extended state.json to v1.1 with research_engine object; added hybrid priority; wrote knowledge/integrated-engine-architecture.md; preserved all classic invariants (sprawl gate, no new recursive skills, append-only history). Research cycle remains 516 (Track 5 complete); classic cycle_count advanced to 24.
+Capability delta: system can now advance theoretical research tracks and emit MOCA-anchored metrics as first-class GitHub knowledge artifacts without forking the daily-compound-ignition path or creating duplicate skills.
+Next: advance research_engine to Track 6 + Milestone 6.

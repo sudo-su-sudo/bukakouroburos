@@ -25,3 +25,9 @@
 - Count remains 3; max_aliases unchanged at 18.
 - Knowledge artifacts refreshed with 2026-10-20T10:33:59Z timestamp.
 - No duplicate skills created.
+
+## 2026-10-20 — Cycle 24
+
+- Integrated research_engine (7-track + 10-milestone + MOCA) into classic Compound Loop.
+- state.json → v1.1; knowledge/integrated-engine-architecture.md created.
+- No new skills; sprawl gate untouched; GitHub remains primary durable store.

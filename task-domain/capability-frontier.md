@@ -16,3 +16,6 @@
 - re-run shadow-alias-scorer.py zero-brief on cold sandbox verifies count=3 (verified cycle 22: 2026-10-19T10:33:56Z)
 
 - re-run shadow-alias-scorer.py zero-brief on cold sandbox verifies count=3 (verified cycle 23: 2026-10-20T10:34:00Z)
+
+- hybrid cycle: advance research_engine track+milestone while preserving classic sprawl gate and MOCA anchor (cycle 24)
+- emit research metrics as durable knowledge/ artifacts under GitHub (Drive secondary) (cycle 24)
