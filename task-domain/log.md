@@ -31,3 +31,10 @@
 - Integrated research_engine (7-track + 10-milestone + MOCA) into classic Compound Loop.
 - state.json → v1.1; knowledge/integrated-engine-architecture.md created.
 - No new skills; sprawl gate untouched; GitHub remains primary durable store.
+
+## 2026-10-21 — Cycle 25
+
+- Advanced research_engine: Track 6 (Weird Machines & Microarchitectural Hardware Exploitation) + Milestone 6 (PROJ_06_TWOS_COMPLEMENT_SIGN_INVERSION).
+- knowledge/weird_machines_sign_inversion_metrics.json written with new MOCA anchor.
+- research_cycle → 517; classic cycle_count → 25.
+- No new skills; sprawl gate preserved.
