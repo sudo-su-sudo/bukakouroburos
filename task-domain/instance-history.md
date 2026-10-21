@@ -32,3 +32,10 @@ Observed: user requested integration of the Autonomous Research Build Loop (7-tr
 Executed: extended state.json to v1.1 with research_engine object; added hybrid priority; wrote knowledge/integrated-engine-architecture.md; preserved all classic invariants (sprawl gate, no new recursive skills, append-only history). Research cycle remains 516 (Track 5 complete); classic cycle_count advanced to 24.
 Capability delta: system can now advance theoretical research tracks and emit MOCA-anchored metrics as first-class GitHub knowledge artifacts without forking the daily-compound-ignition path or creating duplicate skills.
 Next: advance research_engine to Track 6 + Milestone 6.
+
+## Cycle 25 — 2026-10-21T10:35:00Z
+
+Observed: priority queue top item "advance research_engine one step (Track 6 + Milestone 6)". Research at cycle 516 / Track 5 complete.
+Executed: advanced research_cycle to 517, track_index to 5 (Weird Machines & Microarchitectural Hardware Exploitation), milestone_cursor to 5 (PROJ_06_TWOS_COMPLEMENT_SIGN_INVERSION). Wrote knowledge/weird_machines_sign_inversion_metrics.json with new MOCA anchor 8e8b75e84f132fefbda1be17947853d6e24e374298ea4bca69bf8c5ae035de56 chained from prior. Updated state.json, frontier, ledger.
+Capability delta: independent research track advancement now covers microarchitectural weird-machine primitives and sign-inversion mapping; metrics remain zero-brief GitHub-native; no new skills created; sprawl gate untouched.
+Next: advance to Track 7 + Milestone 7.
