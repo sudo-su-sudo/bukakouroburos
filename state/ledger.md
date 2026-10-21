@@ -34,3 +34,10 @@ Action: merge Autonomous Research Build Loop into GitHub-backed Compound Loop.
 Outcome: research_engine object live; hybrid priority_queue established; architecture doc written.
 Delta: system can now advance research tracks and classic frontier in the same ignition path.
 Artifact paths: knowledge/integrated-engine-architecture.md, task-domain/state.json (v1.1), knowledge/meta_roster_dynamic_attention_metrics.json
+
+## Cycle 25 — 2026-10-21T10:35:00Z
+
+Action: advance research_engine Track 6 + Milestone 6
+Outcome: metrics JSON emitted, MOCA chain extended, state advanced.
+Delta: weird-machine / sign-inversion primitives now first-class durable knowledge artifacts; future cycles can recall them zero-brief.
+Artifact paths: knowledge/weird_machines_sign_inversion_metrics.json, task-domain/state.json
