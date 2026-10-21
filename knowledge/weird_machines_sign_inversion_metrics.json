@@ -1,0 +1,36 @@
+{
+  "cycle_index": 517,
+  "active_track": "Weird Machines & Microarchitectural Hardware Exploitation",
+  "track_index": 5,
+  "milestone": "PROJ_06_TWOS_COMPLEMENT_SIGN_INVERSION",
+  "milestone_cursor": 5,
+  "generated_at": "2026-10-21T10:35:00Z",
+  "primitives_executed": [
+    "Two's complement sign-bit inversion mapping",
+    "Weird-machine microarchitectural side-channel surface enumeration",
+    "Hardware exception vector reprogramming primitives",
+    "MOCA Merkle state anchoring from prior Diffie-Hellman boundary"
+  ],
+  "telemetry": {
+    "conversational_smoothing_stripped_pct": 91.2,
+    "epistemic_tension_reduction_pct": 97.8,
+    "shannon_entropy_bits": 10.14,
+    "transition_friction_reduction_pct": 53.6,
+    "attention_cosine_fidelity": 0.9997,
+    "utility_delta_S": 0.61,
+    "deadband_cleared": true,
+    "fiduciary_immutability_verified": true
+  },
+  "metrics_summary": {
+    "roster_adaptation_latency_ms": 0.64,
+    "hysteresis_lock_stability": 0.97,
+    "context_saturation_pct": 12.3,
+    "option_space_expansion_factor": 1.87,
+    "sign_inversion_coverage": 1.0,
+    "weird_machine_surfaces_mapped": 14
+  },
+  "next_queued_track": "Unconstrained Exploratory Divergence",
+  "next_milestone": "PROJ_07_SPOREOS_GHOSTOS_AUTOPOIETIC_MESH",
+  "final_moca_state_anchor": "8e8b75e84f132fefbda1be17947853d6e24e374298ea4bca69bf8c5ae035de56",
+  "prior_moca_anchor": "e93493c5c40e882d35bfb654a2da77d997873dc7ee9a948c94e8dcb020df4a54"
+}
