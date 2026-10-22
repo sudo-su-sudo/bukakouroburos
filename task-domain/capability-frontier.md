@@ -21,3 +21,5 @@
 - emit research metrics as durable knowledge/ artifacts under GitHub (Drive secondary) (cycle 24)
 
 - advance research_engine to Track 6 / Milestone 6 (Weird Machines + Twos Complement Sign Inversion) with MOCA-anchored metrics (cycle 25)
+
+- advance research_engine to Track 7 / Milestone 7 (Unconstrained Exploratory Divergence + SporeOS GhostOS Autopoietic Mesh) with MOCA-anchored metrics (cycle 26)
