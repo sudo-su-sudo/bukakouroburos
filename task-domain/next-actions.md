@@ -1,13 +1,13 @@
 # Next Actions
 
-Updated: 2026-10-22T10:33:59Z after cycle 26 (research Track 7 + Milestone 7).
+Updated: 2026-10-23T10:34:08Z after cycle 27 (research Track 8 + Milestone 8).
 
 **Durable store:** `github.com/sudo-su-sudo/compounding-agency`  
 Every cycle: BOOTSTRAP from GitHub → execute → SHUTDOWN push. Local files alone die.
 
 ## Priority queue
 
-1. **TAKE** advance research_engine one step (Track 8 + Milestone 8) and write MOCA-anchored metrics to knowledge/
+1. **TAKE** advance research_engine one step (Track 9 + Milestone 9) and write MOCA-anchored metrics to knowledge/
 2. re-score shadow aliases after any skill change
 3. NEVER create another recursive/compound/task-domain skill
 4. skill-consolidator --max-aliases 18 --prior-map (re-run if skills change)
@@ -29,8 +29,8 @@ python3 /home/workdir/artifacts/scripts/pull-outward-primitive.py --recall hamil
 
 ## Research Engine (integrated)
 
-- research_cycle: 518 (just completed Track 7 / Milestone 7)
-- next: Track 8 (Unconstrained Exploratory Divergence continued or next) + Milestone 8 (PROJ_08_PROJECT_CHRONOS_PROOF_OF_PHYSICS)
+- research_cycle: 519 (just completed Track 8 / Milestone 8)
+- next: Track 9 + Milestone 9 (PROJ_09_SUBSPACE_ZEROTH_ORDER_LEVIATHAN)
 - metrics land in knowledge/ on GitHub; Drive is optional mirror only
 
 ## Last scores
