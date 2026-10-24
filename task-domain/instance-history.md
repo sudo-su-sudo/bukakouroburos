@@ -46,3 +46,17 @@ Observed: priority queue top item "advance research_engine one step (Track 7 + M
 Executed: advanced research_cycle to 518, track_index to 6 (Unconstrained Exploratory Divergence), milestone_cursor to 6 (PROJ_07_SPOREOS_GHOSTOS_AUTOPOIETIC_MESH). Wrote knowledge/sporeos_ghostos_autopoietic_mesh_metrics.json with new MOCA anchor 8e9a586d016b10bb1b71f754172e3ab944054190d8dfc67043ffd2b86a4f9424 chained from prior. Updated state.json, frontier, ledger.
 Capability delta: independent research track advancement now covers SporeOS/GhostOS autopoietic mesh primitives; metrics remain zero-brief GitHub-native; no new skills created; sprawl gate untouched.
 Next: advance to Track 8 + Milestone 8.
+
+## Cycle 27 — 2026-10-23T10:34:08Z
+
+Observed: priority queue top item "advance research_engine one step (Track 8 + Milestone 8)". Research at cycle 518 / Track 7 complete. History files lagged behind state.
+Executed: advanced research_cycle to 519, track_index to 7 (Unconstrained Exploratory Divergence), milestone_cursor to 7 (PROJ_08_PROJECT_CHRONOS_PROOF_OF_PHYSICS). Wrote knowledge/chronos_proof_of_physics_metrics.json with new MOCA anchor 7585284bfbee734624b7a5f0e9c7ade274f77862e371db779a75eaa79385b147 chained from prior. (Note: this entry backfilled for consistency.)
+Capability delta: independent research track advancement now covers Chronos temporal causality inversion and proof-of-physics embedding; metrics remain zero-brief GitHub-native; no new skills created; sprawl gate untouched.
+Next: advance to Track 9 + Milestone 9.
+
+## Cycle 28 — 2026-10-24T10:34:11Z
+
+Observed: priority queue top item "advance research_engine one step (Track 9 + Milestone 9)". Research at cycle 519 / Track 8 complete.
+Executed: advanced research_cycle to 520, track_index remains 7 (Unconstrained Exploratory Divergence), milestone_cursor to 8 (PROJ_09_SUBSPACE_ZEROTH_ORDER_LEVIATHAN). Wrote knowledge/subspace_zeroth_order_leviathan_metrics.json with new MOCA anchor febf316a5c4eb2564338352dd6aef57af21167875f05545d4729d1e37945dc3c chained from prior Chronos. Updated state.json, frontier, ledger.
+Capability delta: independent research track advancement now covers subspace zeroth-order Leviathan boundary dissolution primitives; metrics remain zero-brief GitHub-native; no new skills created; sprawl gate untouched.
+Next: advance to Track 10 + Milestone 10.

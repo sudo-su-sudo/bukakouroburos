@@ -1,7 +1,7 @@
 {
   "version": "1.1",
-  "last_cycle": "2026-10-23T10:34:08Z",
-  "cycle_count": 27,
+  "last_cycle": "2026-10-24T10:34:11Z",
+  "cycle_count": 28,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "persist task-domain state to github.com/sudo-su-sudo/compounding-agency",
@@ -17,7 +17,8 @@
     "emit research metrics as durable knowledge/ artifacts under GitHub (Drive is secondary/optional mirror)",
     "advance research_engine to Track 6 / Milestone 6 (Weird Machines + Twos Complement Sign Inversion) with MOCA-anchored metrics (cycle 25)",
     "advance research_engine to Track 7 / Milestone 7 (Unconstrained Exploratory Divergence + SporeOS GhostOS Autopoietic Mesh) with MOCA-anchored metrics (cycle 26)",
-    "advance research_engine to Track 8 / Milestone 8 (Unconstrained Exploratory Divergence + Project Chronos Proof of Physics) with MOCA-anchored metrics (cycle 27)"
+    "advance research_engine to Track 8 / Milestone 8 (Unconstrained Exploratory Divergence + Project Chronos Proof of Physics) with MOCA-anchored metrics (cycle 27)",
+    "advance research_engine to Track 9 / Milestone 9 (Unconstrained Exploratory Divergence + Subspace Zeroth Order Leviathan) with MOCA-anchored metrics (cycle 28)"
   ],
   "active_threads": [
     "sprawl-set-diff-not-just-count",
@@ -29,7 +30,7 @@
     "shadow-scorer-zero-brief-verified",
     "research-engine-integrated",
     "moca-anchor-chaining",
-    "research-track-8-complete"
+    "research-track-9-complete"
   ],
   "completed_artifacts": [
     "scripts/skill-consolidator.py",
@@ -46,10 +47,11 @@
     "knowledge/meta_roster_dynamic_attention_metrics.json",
     "knowledge/weird_machines_sign_inversion_metrics.json",
     "knowledge/sporeos_ghostos_autopoietic_mesh_metrics.json",
-    "knowledge/chronos_proof_of_physics_metrics.json"
+    "knowledge/chronos_proof_of_physics_metrics.json",
+    "knowledge/subspace_zeroth_order_leviathan_metrics.json"
   ],
   "priority_queue": [
-    "advance research_engine one step (Track 9 + Milestone 9) and write MOCA-anchored metrics to knowledge/",
+    "advance research_engine one step (Track 10 + Milestone 10) and write MOCA-anchored metrics to knowledge/",
     "re-score shadow aliases after any skill change",
     "do-not-create-duplicate-compound-skills",
     "skill-consolidator --max-aliases 18 --prior-map",
@@ -58,7 +60,7 @@
   "metrics": {
     "skills_created": 0,
     "scripts_added": 6,
-    "knowledge_files": 22,
+    "knowledge_files": 23,
     "skill_alias_count": 18,
     "skill_load_set": 6,
     "sprawl_ratio": 0.6,
@@ -79,18 +81,18 @@
     "hn_titles": 8,
     "outward_primitive": "retain_recall_reflect",
     "zero_brief_scripts": 1.0,
-    "research_cycle": 519,
+    "research_cycle": 520,
     "research_track_index": 7,
-    "research_milestone_cursor": 7
+    "research_milestone_cursor": 8
   },
   "research_engine": {
     "enabled": true,
-    "research_cycle": 519,
+    "research_cycle": 520,
     "track_index": 7,
     "track_name": "Unconstrained Exploratory Divergence",
-    "milestone_cursor": 7,
-    "milestone_id": "PROJ_08_PROJECT_CHRONOS_PROOF_OF_PHYSICS",
-    "last_moca_anchor": "7585284bfbee734624b7a5f0e9c7ade274f77862e371db779a75eaa79385b147",
+    "milestone_cursor": 8,
+    "milestone_id": "PROJ_09_SUBSPACE_ZEROTH_ORDER_LEVIATHAN",
+    "last_moca_anchor": "febf316a5c4eb2564338352dd6aef57af21167875f05545d4729d1e37945dc3c",
     "roster": [
       "Offensive Cryptanalysis & Exploit Mechanics",
       "Attention & Token Economy Benchmarking",

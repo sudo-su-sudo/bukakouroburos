@@ -48,3 +48,17 @@ Action: advance research_engine Track 7 + Milestone 7
 Outcome: metrics JSON emitted, MOCA chain extended, state advanced.
 Delta: SporeOS/GhostOS autopoietic mesh primitives now first-class durable knowledge artifacts; future cycles can recall them zero-brief.
 Artifact paths: knowledge/sporeos_ghostos_autopoietic_mesh_metrics.json, task-domain/state.json
+
+## Cycle 27 — 2026-10-23T10:34:08Z
+
+Action: advance research_engine Track 8 + Milestone 8
+Outcome: metrics JSON emitted, MOCA chain extended, state advanced.
+Delta: Chronos proof-of-physics primitives now first-class durable knowledge artifacts; future cycles can recall them zero-brief.
+Artifact paths: knowledge/chronos_proof_of_physics_metrics.json, task-domain/state.json
+
+## Cycle 28 — 2026-10-24T10:34:11Z
+
+Action: advance research_engine Track 9 + Milestone 9
+Outcome: metrics JSON emitted, MOCA chain extended, state advanced.
+Delta: Subspace zeroth-order Leviathan primitives now first-class durable knowledge artifacts; future cycles can recall them zero-brief.
+Artifact paths: knowledge/subspace_zeroth_order_leviathan_metrics.json, task-domain/state.json
