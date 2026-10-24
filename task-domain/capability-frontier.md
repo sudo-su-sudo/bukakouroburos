@@ -23,3 +23,7 @@
 - advance research_engine to Track 6 / Milestone 6 (Weird Machines + Twos Complement Sign Inversion) with MOCA-anchored metrics (cycle 25)
 
 - advance research_engine to Track 7 / Milestone 7 (Unconstrained Exploratory Divergence + SporeOS GhostOS Autopoietic Mesh) with MOCA-anchored metrics (cycle 26)
+
+- advance research_engine to Track 8 / Milestone 8 (Unconstrained Exploratory Divergence + Project Chronos Proof of Physics) with MOCA-anchored metrics (cycle 27)
+
+- advance research_engine to Track 9 / Milestone 9 (Unconstrained Exploratory Divergence + Subspace Zeroth Order Leviathan) with MOCA-anchored metrics (cycle 28)

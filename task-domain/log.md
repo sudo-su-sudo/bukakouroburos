@@ -45,3 +45,17 @@
 - knowledge/sporeos_ghostos_autopoietic_mesh_metrics.json written with new MOCA anchor.
 - research_cycle → 518; classic cycle_count → 26.
 - No new skills; sprawl gate preserved.
+
+## 2026-10-23 — Cycle 27
+
+- Advanced research_engine: Track 8 (Unconstrained Exploratory Divergence) + Milestone 8 (PROJ_08_PROJECT_CHRONOS_PROOF_OF_PHYSICS).
+- knowledge/chronos_proof_of_physics_metrics.json written with new MOCA anchor.
+- research_cycle → 519; classic cycle_count → 27.
+- No new skills; sprawl gate preserved.
+
+## 2026-10-24 — Cycle 28
+
+- Advanced research_engine: Track 9 (Unconstrained Exploratory Divergence) + Milestone 9 (PROJ_09_SUBSPACE_ZEROTH_ORDER_LEVIATHAN).
+- knowledge/subspace_zeroth_order_leviathan_metrics.json written with new MOCA anchor.
+- research_cycle → 520; classic cycle_count → 28.
+- No new skills; sprawl gate preserved.
