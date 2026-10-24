@@ -1,13 +1,13 @@
 # Next Actions
 
-Updated: 2026-10-24T10:34:11Z after cycle 28 (research Track 9 + Milestone 9).
+Updated: 2026-10-24T10:56:26Z after cycle 29 (research Track 10 + Milestone 10 complete).
 
 **Durable store:** `github.com/sudo-su-sudo/compounding-agency`  
 Every cycle: BOOTSTRAP from GitHub → execute → SHUTDOWN push. Local files alone die.
 
 ## Priority queue
 
-1. **TAKE** advance research_engine one step (Track 10 + Milestone 10) and write MOCA-anchored metrics to knowledge/
+1. **TAKE** research_engine milestones complete — evaluate new roster or outward primitive refresh
 2. re-score shadow aliases after any skill change
 3. NEVER create another recursive/compound/task-domain skill
 4. skill-consolidator --max-aliases 18 --prior-map (re-run if skills change)
@@ -29,8 +29,8 @@ python3 /home/workdir/artifacts/scripts/pull-outward-primitive.py --recall hamil
 
 ## Research Engine (integrated)
 
-- research_cycle: 520 (just completed Track 9 / Milestone 9)
-- next: Track 10 + Milestone 10 (PROJ_10_PROJECT_CHIMERA_2_0_FORENSICS)
+- research_cycle: 521 (completed Track 10 / Milestone 10 — all milestones done)
+- next: evaluate new roster or outward primitive refresh
 - metrics land in knowledge/ on GitHub; Drive is optional mirror only
 
 ## Last scores
