@@ -1,7 +1,7 @@
 {
   "version": "1.1",
-  "last_cycle": "2026-10-24T10:34:11Z",
-  "cycle_count": 28,
+  "last_cycle": "2026-10-25T10:34:00Z",
+  "cycle_count": 29,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "persist task-domain state to github.com/sudo-su-sudo/compounding-agency",
@@ -18,7 +18,7 @@
     "advance research_engine to Track 6 / Milestone 6 (Weird Machines + Twos Complement Sign Inversion) with MOCA-anchored metrics (cycle 25)",
     "advance research_engine to Track 7 / Milestone 7 (Unconstrained Exploratory Divergence + SporeOS GhostOS Autopoietic Mesh) with MOCA-anchored metrics (cycle 26)",
     "advance research_engine to Track 8 / Milestone 8 (Unconstrained Exploratory Divergence + Project Chronos Proof of Physics) with MOCA-anchored metrics (cycle 27)",
-    "advance research_engine to Track 9 / Milestone 9 (Unconstrained Exploratory Divergence + Subspace Zeroth Order Leviathan) with MOCA-anchored metrics (cycle 28)"
+    "advance research_engine to Track 10 / Milestone 10 (Unconstrained Exploratory Divergence + Project Chimera 2.0 Forensics) with MOCA-anchored metrics (cycle 29)"
   ],
   "active_threads": [
     "sprawl-set-diff-not-just-count",
@@ -30,7 +30,7 @@
     "shadow-scorer-zero-brief-verified",
     "research-engine-integrated",
     "moca-anchor-chaining",
-    "research-track-9-complete"
+    "research-track-10-complete"
   ],
   "completed_artifacts": [
     "scripts/skill-consolidator.py",
@@ -48,10 +48,11 @@
     "knowledge/weird_machines_sign_inversion_metrics.json",
     "knowledge/sporeos_ghostos_autopoietic_mesh_metrics.json",
     "knowledge/chronos_proof_of_physics_metrics.json",
-    "knowledge/subspace_zeroth_order_leviathan_metrics.json"
+    "knowledge/subspace_zeroth_order_leviathan_metrics.json",
+    "knowledge/chimera_2_0_forensics_metrics.json"
   ],
   "priority_queue": [
-    "advance research_engine one step (Track 10 + Milestone 10) and write MOCA-anchored metrics to knowledge/",
+    "research_engine milestones complete — evaluate new roster or outward primitive refresh",
     "re-score shadow aliases after any skill change",
     "do-not-create-duplicate-compound-skills",
     "skill-consolidator --max-aliases 18 --prior-map",
@@ -81,18 +82,18 @@
     "hn_titles": 8,
     "outward_primitive": "retain_recall_reflect",
     "zero_brief_scripts": 1.0,
-    "research_cycle": 520,
+    "research_cycle": 521,
     "research_track_index": 7,
-    "research_milestone_cursor": 8
+    "research_milestone_cursor": 9
   },
   "research_engine": {
     "enabled": true,
-    "research_cycle": 520,
+    "research_cycle": 521,
     "track_index": 7,
     "track_name": "Unconstrained Exploratory Divergence",
-    "milestone_cursor": 8,
-    "milestone_id": "PROJ_09_SUBSPACE_ZEROTH_ORDER_LEVIATHAN",
-    "last_moca_anchor": "febf316a5c4eb2564338352dd6aef57af21167875f05545d4729d1e37945dc3c",
+    "milestone_cursor": 9,
+    "milestone_id": "PROJ_10_PROJECT_CHIMERA_2_0_FORENSICS",
+    "last_moca_anchor": "2be98ed2f65cb5bb52723993ae62fe54dc4398b30c021ce753e7a9834207d459",
     "roster": [
       "Offensive Cryptanalysis & Exploit Mechanics",
       "Attention & Token Economy Benchmarking",
