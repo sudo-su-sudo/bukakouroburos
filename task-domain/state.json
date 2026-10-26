@@ -1,7 +1,7 @@
 {
   "version": "1.1",
-  "last_cycle": "2026-10-25T10:34:00Z",
-  "cycle_count": 29,
+  "last_cycle": "2026-10-26T06:33:00Z",
+  "cycle_count": 30,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "persist task-domain state to github.com/sudo-su-sudo/compounding-agency",
@@ -18,7 +18,8 @@
     "advance research_engine to Track 6 / Milestone 6 (Weird Machines + Twos Complement Sign Inversion) with MOCA-anchored metrics (cycle 25)",
     "advance research_engine to Track 7 / Milestone 7 (Unconstrained Exploratory Divergence + SporeOS GhostOS Autopoietic Mesh) with MOCA-anchored metrics (cycle 26)",
     "advance research_engine to Track 8 / Milestone 8 (Unconstrained Exploratory Divergence + Project Chronos Proof of Physics) with MOCA-anchored metrics (cycle 27)",
-    "advance research_engine to Track 10 / Milestone 10 (Unconstrained Exploratory Divergence + Project Chimera 2.0 Forensics) with MOCA-anchored metrics (cycle 29)"
+    "advance research_engine to Track 10 / Milestone 10 (Unconstrained Exploratory Divergence + Project Chimera 2.0 Forensics) with MOCA-anchored metrics (cycle 29)",
+    "zero-brief roster-eval.py after milestones complete emits ranked next actions"
   ],
   "active_threads": [
     "sprawl-set-diff-not-just-count",
@@ -52,7 +53,7 @@
     "knowledge/chimera_2_0_forensics_metrics.json"
   ],
   "priority_queue": [
-    "research_engine milestones complete — evaluate new roster or outward primitive refresh",
+    "outward primitive refresh via roster-eval.py + extend pull-outward-primitive",
     "re-score shadow aliases after any skill change",
     "do-not-create-duplicate-compound-skills",
     "skill-consolidator --max-aliases 18 --prior-map",

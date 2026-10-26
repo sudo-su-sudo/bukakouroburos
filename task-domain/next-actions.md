@@ -1,13 +1,13 @@
 # Next Actions
 
-Updated: 2026-10-25T10:34:00Z after cycle 29 (research Track 10 + Milestone 10 complete).
+Updated: 2026-10-26T06:33:00Z after cycle 30 (roster evaluation complete).
 
 **Durable store:** `github.com/sudo-su-sudo/compounding-agency`  
 Every cycle: BOOTSTRAP from GitHub → execute → SHUTDOWN push. Local files alone die.
 
 ## Priority queue
 
-1. **TAKE** research_engine milestones complete — evaluate new roster or outward primitive refresh
+1. **TAKE** outward primitive refresh via roster-eval.py + extend pull-outward-primitive
 2. re-score shadow aliases after any skill change
 3. NEVER create another recursive/compound/task-domain skill
 4. skill-consolidator --max-aliases 18 --prior-map (re-run if skills change)
@@ -20,23 +20,20 @@ capability-growth-core, capability-index, daily-compound-ignition, knowledge-com
 ## Zero-brief commands
 
 ```
-python3 /home/workdir/artifacts/scripts/skill-consolidator.py --max-aliases 18 --prior-map task-domain/skill-canonical-map.json
+python3 /home/workdir/artifacts/scripts/roster-eval.py
 python3 /home/workdir/artifacts/scripts/shadow-alias-scorer.py
-python3 /home/workdir/artifacts/scripts/refresh-if-docked.py
-python3 /home/workdir/artifacts/scripts/eval-score.py
 python3 /home/workdir/artifacts/scripts/pull-outward-primitive.py --recall hamilton
 ```
 
 ## Research Engine (integrated)
 
-- research_cycle: 521 (completed Track 10 / Milestone 10 — all milestones done)
-- next: evaluate new roster or outward primitive refresh
-- metrics land in knowledge/ on GitHub; Drive is optional mirror only
+- research_cycle: 521 (all milestones complete)
+- next: outward primitive refresh
+- metrics land in knowledge/ on GitHub
 
 ## Last scores
 
-Sprawl gate: alias_count=18, sprawl_gate=pass, delta_unchanged=true. Shadow: shadow_alias_count=3.
-Snapshot: generated_at≈2026-10-15T10:35Z.
+Sprawl gate: alias_count=18, sprawl_gate=pass. Shadow: shadow_alias_count=3.
 
 ## Ignition
 

@@ -59,3 +59,8 @@
 - knowledge/subspace_zeroth_order_leviathan_metrics.json written with new MOCA anchor.
 - research_cycle → 520; classic cycle_count → 28.
 - No new skills; sprawl gate preserved.
+
+## Cycle 30 — 2026-10-26
+- Action: post-milestone roster evaluation
+- Artifact: knowledge/roster-evaluation-2026-10-26.md + scripts/roster-eval.py
+- Delta: future cycles can score next expansion zero-brief without re-deriving state

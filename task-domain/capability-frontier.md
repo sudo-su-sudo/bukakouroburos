@@ -27,3 +27,8 @@
 - advance research_engine to Track 8 / Milestone 8 (Unconstrained Exploratory Divergence + Project Chronos Proof of Physics) with MOCA-anchored metrics (cycle 27)
 
 - advance research_engine to Track 9 / Milestone 9 (Unconstrained Exploratory Divergence + Subspace Zeroth Order Leviathan) with MOCA-anchored metrics (cycle 28)
+
+## Cycle 30 — 2026-10-26
+- New possible: zero-brief roster evaluation after research milestones complete
+- Artifact: scripts/roster-eval.py + knowledge/roster-evaluation-2026-10-26.md
+- Why it compounds: future ignitions get ranked next actions from local state without re-analysis

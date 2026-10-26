@@ -62,3 +62,8 @@ Action: advance research_engine Track 9 + Milestone 9
 Outcome: metrics JSON emitted, MOCA chain extended, state advanced.
 Delta: Subspace zeroth-order Leviathan primitives now first-class durable knowledge artifacts; future cycles can recall them zero-brief.
 Artifact paths: knowledge/subspace_zeroth_order_leviathan_metrics.json, task-domain/state.json
+
+## Cycle 30 — 2026-10-26
+retain: roster-eval.py + evaluation note
+recall: local file search via pull-outward-primitive.py
+reflect: post-milestone, prefer outward scoring over new research tracks
