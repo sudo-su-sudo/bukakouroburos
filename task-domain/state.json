@@ -1,7 +1,7 @@
 {
   "version": "1.1",
-  "last_cycle": "2026-10-27T10:34:58Z",
-  "cycle_count": 31,
+  "last_cycle": "2026-10-28T10:34:16Z",
+  "cycle_count": 32,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "persist task-domain state to github.com/sudo-su-sudo/compounding-agency",
@@ -20,7 +20,8 @@
     "advance research_engine to Track 8 / Milestone 8 (Unconstrained Exploratory Divergence + Project Chronos Proof of Physics) with MOCA-anchored metrics (cycle 27)",
     "advance research_engine to Track 10 / Milestone 10 (Unconstrained Exploratory Divergence + Project Chimera 2.0 Forensics) with MOCA-anchored metrics (cycle 29)",
     "zero-brief roster-eval.py after milestones complete emits ranked next actions",
-    "zero-brief outward primitive refresh after roster-eval (cycle 31)"
+    "zero-brief outward primitive refresh after roster-eval (cycle 31)",
+    "zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 32)"
   ],
   "active_threads": [
     "sprawl-set-diff-not-just-count",
@@ -52,19 +53,21 @@
     "knowledge/chronos_proof_of_physics_metrics.json",
     "knowledge/subspace_zeroth_order_leviathan_metrics.json",
     "knowledge/chimera_2_0_forensics_metrics.json",
-    "knowledge/outward-primitive-refresh-2026-10-27.md"
+    "knowledge/outward-primitive-refresh-2026-10-27.md",
+    "scripts/capability-index-query.py",
+    "knowledge/capability-index-query-2026-10-28.json"
   ],
   "priority_queue": [
+    "run capability-index-query.py zero-brief",
     "re-score shadow aliases after any skill change",
     "refresh outward primitive zero-brief",
     "do-not-create-duplicate-compound-skills",
-    "skill-consolidator --max-aliases 18 --prior-map",
     "extend recall with weighted scoring if needed"
   ],
   "metrics": {
     "skills_created": 0,
-    "scripts_added": 6,
-    "knowledge_files": 24,
+    "scripts_added": 7,
+    "knowledge_files": 25,
     "skill_alias_count": 18,
     "skill_load_set": 6,
     "sprawl_ratio": 0.6,
