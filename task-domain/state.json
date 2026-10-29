@@ -1,7 +1,7 @@
 {
   "version": "1.1",
-  "last_cycle": "2026-10-28T10:34:16Z",
-  "cycle_count": 32,
+  "last_cycle": "2026-10-29T10:34:15Z",
+  "cycle_count": 33,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "persist task-domain state to github.com/sudo-su-sudo/compounding-agency",
@@ -21,7 +21,8 @@
     "advance research_engine to Track 10 / Milestone 10 (Unconstrained Exploratory Divergence + Project Chimera 2.0 Forensics) with MOCA-anchored metrics (cycle 29)",
     "zero-brief roster-eval.py after milestones complete emits ranked next actions",
     "zero-brief outward primitive refresh after roster-eval (cycle 31)",
-    "zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 32)"
+    "zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 32)",
+    "zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 33)"
   ],
   "active_threads": [
     "sprawl-set-diff-not-just-count",
@@ -55,19 +56,20 @@
     "knowledge/chimera_2_0_forensics_metrics.json",
     "knowledge/outward-primitive-refresh-2026-10-27.md",
     "scripts/capability-index-query.py",
-    "knowledge/capability-index-query-2026-10-28.json"
+    "knowledge/capability-index-query-2026-10-28.json",
+    "knowledge/capability-index-query-2026-10-29.json"
   ],
   "priority_queue": [
-    "run capability-index-query.py zero-brief",
     "re-score shadow aliases after any skill change",
     "refresh outward primitive zero-brief",
     "do-not-create-duplicate-compound-skills",
-    "extend recall with weighted scoring if needed"
+    "extend recall with weighted scoring if needed",
+    "run capability-index-query.py zero-brief periodically"
   ],
   "metrics": {
     "skills_created": 0,
     "scripts_added": 7,
-    "knowledge_files": 25,
+    "knowledge_files": 26,
     "skill_alias_count": 18,
     "skill_load_set": 6,
     "sprawl_ratio": 0.6,
