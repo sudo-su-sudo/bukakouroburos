@@ -1,17 +1,17 @@
 # Next Actions
 
-Updated: 2026-10-28T10:34:16Z after cycle 32 (capability index query).
+Updated: 2026-10-29T10:34:30Z after cycle 33 (capability index query verified).
 
 **Durable store:** `github.com/sudo-su-sudo/compounding-agency`  
 Every cycle: BOOTSTRAP from GitHub → execute → SHUTDOWN push. Local files alone die.
 
 ## Priority queue
 
-1. **TAKE** run capability-index-query.py zero-brief
-2. re-score shadow aliases after any skill change
+1. **TAKE** re-score shadow aliases after any skill change
+2. refresh outward primitive zero-brief
 3. NEVER create another recursive/compound/task-domain skill
-4. refresh outward primitive zero-brief
-5. extend recall with weighted scoring if needed
+4. extend recall with weighted scoring if needed
+5. run capability-index-query.py zero-brief periodically
 
 ## Load set (do not load the 18 aliases or the 3 shadows)
 
