@@ -1,6 +1,6 @@
 # Shadow Alias Score
 
-Generated: 2026-10-20T10:33:59Z
+Generated: 2026-10-30T10:34:03Z
 shadow_alias_count: 3
 max_aliases remains 18 (unchanged).
 
@@ -14,3 +14,4 @@ max_aliases remains 18 (unchanged).
 
 shadow_alias_count is informational. It does not raise the sprawl gate.
 Future cycles can run `python3 scripts/shadow-alias-scorer.py` with zero briefing to re-score.
+

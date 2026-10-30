@@ -1,3 +1,4 @@
 PLACEHOLDER_FRONT
 
 - zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 33)
+- zero-brief shadow-alias-scorer.py re-verifies count=3 on cold sandbox (cycle 34)
