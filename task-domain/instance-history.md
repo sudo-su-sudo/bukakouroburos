@@ -9,3 +9,8 @@ Capability delta: future cycles can query local index without re-scanning GitHub
 Observed: bootstrap from GitHub, top priority re-score shadow aliases.
 Executed: ran scripts/shadow-alias-scorer.py zero-brief, confirmed shadow_alias_count=3, wrote knowledge/shadow-alias-score.json and .md.
 Capability delta: future cycles can re-verify description-only clones with zero briefing; sprawl gate remains pass, no new skills.
+
+## Cycle 35 — 2026-10-31T10:34:14Z
+Observed: bootstrap from GitHub, top priority refresh outward primitive zero-brief.
+Executed: ran scripts/pull-outward-primitive.py zero-brief, generated knowledge/outward-primitive.json and .md using stamped observations (public API 403).
+Capability delta: future cycles can refresh retain/recall/reflect primitive cards with zero briefing; outward signal refreshed without new skills.
