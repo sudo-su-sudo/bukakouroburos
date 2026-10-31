@@ -1,6 +1,6 @@
 # Outward primitive — retain / recall / reflect
 
-Generated: 2026-10-07T10:34:30Z
+Generated: 2026-10-31T10:34:05Z
 Source shortlist: cycle-2 x-signal-ledger (hindsight / openrig / univer).
 TAKE: vectorize-io/hindsight. Not installed. The op split is the primitive.
 
