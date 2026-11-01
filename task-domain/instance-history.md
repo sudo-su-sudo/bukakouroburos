@@ -14,3 +14,8 @@ Capability delta: future cycles can re-verify description-only clones with zero 
 Observed: bootstrap from GitHub, top priority refresh outward primitive zero-brief.
 Executed: ran scripts/pull-outward-primitive.py zero-brief, generated knowledge/outward-primitive.json and .md using stamped observations (public API 403).
 Capability delta: future cycles can refresh retain/recall/reflect primitive cards with zero briefing; outward signal refreshed without new skills.
+
+## Cycle 36 — 2026-11-01T06:45:07Z
+Observed: bootstrap from GitHub, top priority run capability-index-query.py zero-brief periodically.
+Executed: ran scripts/capability-index-query.py, generated knowledge/capability-index-query-2026-11-01.json ranking local task-domain artifacts.
+Capability delta: future cycles can query local index without re-scanning GitHub; verified zero-brief operation, ranked recent files.

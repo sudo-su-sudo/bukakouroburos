@@ -1,6 +1,6 @@
 # Next Actions
 
-Updated: 2026-10-31T10:34:14Z after cycle 35 (outward primitive refresh).
+Updated: 2026-11-01T06:45:07Z after cycle 36 (capability-index-query).
 
 **Durable store:** `github.com/sudo-su-sudo/compounding-agency`  
 Every cycle: BOOTSTRAP from GitHub → execute → SHUTDOWN push. Local files alone die.

@@ -4,3 +4,5 @@ PLACEHOLDER_FRONT
 - zero-brief shadow-alias-scorer.py re-verifies count=3 on cold sandbox (cycle 34)
 
 - zero-brief outward-primitive refresh emits retain_recall_reflect cards with stamped observations (cycle 35)
+
+- zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 36)
