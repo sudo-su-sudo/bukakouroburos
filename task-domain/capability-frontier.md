@@ -6,3 +6,5 @@ PLACEHOLDER_FRONT
 - zero-brief outward-primitive refresh emits retain_recall_reflect cards with stamped observations (cycle 35)
 
 - zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 36)
+
+- zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 37)

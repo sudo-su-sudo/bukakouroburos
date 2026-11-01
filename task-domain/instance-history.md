@@ -19,3 +19,8 @@ Capability delta: future cycles can refresh retain/recall/reflect primitive card
 Observed: bootstrap from GitHub, top priority run capability-index-query.py zero-brief periodically.
 Executed: ran scripts/capability-index-query.py, generated knowledge/capability-index-query-2026-11-01.json ranking local task-domain artifacts.
 Capability delta: future cycles can query local index without re-scanning GitHub; verified zero-brief operation, ranked recent files.
+
+## Cycle 37 — 2026-11-01T11:33:59Z
+Observed: bootstrap from GitHub, top priority run capability-index-query.py zero-brief periodically.
+Executed: ran scripts/capability-index-query.py, generated knowledge/capability-index-query-2026-11-01.json ranking local artifacts.
+Capability delta: future cycles can query local index without re-scanning GitHub; verified zero-brief operation again, ranked recent files including current state.
