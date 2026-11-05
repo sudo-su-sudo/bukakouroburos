@@ -1,7 +1,7 @@
 {
   "version": "1.1",
-  "last_cycle": "2026-11-04T11:34:02Z",
-  "cycle_count": 40,
+  "last_cycle": "2026-11-05T11:34:04Z",
+  "cycle_count": 41,
   "capability_frontier": [
     "bootstrap task-domain substrate from empty artifacts/",
     "persist task-domain state to github.com/sudo-su-sudo/compounding-agency",
@@ -29,7 +29,8 @@
     "zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 37)",
     "zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 38)",
     "zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 39)",
-    "zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 40)"
+    "zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 40)",
+    "zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 41)"
   ],
   "active_threads": [
     "sprawl-set-diff-not-just-count",
@@ -71,7 +72,8 @@
     "knowledge/capability-index-query-2026-11-01.json",
     "knowledge/capability-index-query-2026-11-02.json",
     "knowledge/capability-index-query-2026-11-03.json",
-    "knowledge/capability-index-query-2026-11-04.json"
+    "knowledge/capability-index-query-2026-11-04.json",
+    "knowledge/capability-index-query-2026-11-05.json"
   ],
   "priority_queue": [
     "run capability-index-query.py zero-brief periodically",
@@ -83,7 +85,7 @@
   "metrics": {
     "skills_created": 0,
     "scripts_added": 7,
-    "knowledge_files": 32,
+    "knowledge_files": 33,
     "skill_alias_count": 18,
     "skill_load_set": 6,
     "sprawl_ratio": 0.6,

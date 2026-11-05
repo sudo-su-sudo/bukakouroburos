@@ -15,3 +15,5 @@ Cycle 38 2026-11-02T11:33:53Z: executed capability-index-query.py, wrote knowled
 Cycle 39 2026-11-03T11:33:51Z: executed capability-index-query.py, wrote knowledge/capability-index-query-2026-11-03.json, updated state to cycle 39.
 
 Cycle 40 2026-11-04T11:34:02Z: executed capability-index-query.py, wrote knowledge/capability-index-query-2026-11-04.json, updated state to cycle 40.
+
+Cycle 41 2026-11-05T11:34:04Z: executed capability-index-query.py, wrote knowledge/capability-index-query-2026-11-05.json, updated state to cycle 41.
