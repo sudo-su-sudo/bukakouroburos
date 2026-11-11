@@ -64,3 +64,8 @@ Capability delta: future cycles can query local index without re-scanning GitHub
 Observed: bootstrap from GitHub (state.json was placeholder, protocols failed as expected), top priority run capability-index-query.py zero-brief periodically.
 Executed: fetched and ran scripts/capability-index-query.py zero-brief in temp repo structure, generated knowledge/capability-index-query-2026-11-10.json ranking local task-domain artifacts (file_count=5).
 Capability delta: future cycles can query local index without re-scanning GitHub; verified zero-brief operation on cold sandbox for cycle 46.
+
+## Cycle 47 — 2026-11-11T11:33:50Z
+Observed: bootstrap from GitHub (protocols fetch failed as expected placeholders), top priority run capability-index-query.py zero-brief periodically.
+Executed: fetched and ran scripts/capability-index-query.py zero-brief, generated knowledge/capability-index-query-2026-11-11.json ranking local task-domain artifacts (file_count=5).
+Capability delta: future cycles can query local index without re-scanning GitHub; verified zero-brief operation on cold sandbox for cycle 47.
