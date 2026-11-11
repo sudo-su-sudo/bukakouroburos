@@ -1,6 +1,6 @@
 {
-  "cycle_count": 46,
-  "last_cycle": "2026-11-10T11:34:05Z",
+  "cycle_count": 47,
+  "last_cycle": "2026-11-11T11:33:50Z",
   "priority_queue": [
     "run capability-index-query.py zero-brief periodically",
     "re-score shadow aliases after any skill change",
@@ -8,5 +8,5 @@
     "NEVER create another recursive/compound/task-domain skill",
     "extend recall with weighted scoring if needed"
   ],
-  "notes": "Cycle 46 completed capability-index-query zero-brief."
+  "notes": "Cycle 47 completed capability-index-query zero-brief."
 }
