@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-11-14T11:34:04Z",
+  "file_count": 5,
+  "top_recent": [
+    {
+      "path": "task-domain/capability-frontier.md",
+      "size": 1771,
+      "mtime": "2026-11-14T11:33:54Z"
+    },
+    {
+      "path": "task-domain/log.md",
+      "size": 2571,
+      "mtime": "2026-11-14T11:33:54Z"
+    },
+    {
+      "path": "task-domain/instance-history.md",
+      "size": 7543,
+      "mtime": "2026-11-14T11:33:53Z"
+    },
+    {
+      "path": "task-domain/next-actions.md",
+      "size": 1267,
+      "mtime": "2026-11-14T11:33:32Z"
+    },
+    {
+      "path": "task-domain/state.json",
+      "size": 435,
+      "mtime": "2026-11-14T11:33:31Z"
+    }
+  ],
+  "note": "Zero-brief query of durable capability artifacts. Use to identify next expansion without re-scanning GitHub."
+}
