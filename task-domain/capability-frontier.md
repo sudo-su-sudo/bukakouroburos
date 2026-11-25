@@ -50,3 +50,5 @@ PLACEHOLDER_FRONT
 - zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 59)
 
 - zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 60)
+
+- zero-brief capability-index-query.py emits ranked recent artifacts without GitHub re-scan (cycle 61)
